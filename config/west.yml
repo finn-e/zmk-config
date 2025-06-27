@@ -19,9 +19,7 @@ manifest:
       revision: main
     - name: zmk-fingerpunch-keyboards
       remote: sadek
-    - name: zmk-fingerpunch-vik
-      remote: sadek
-    - name: zmk-fingerpunch-controllers
-      remote: sadek
+      revision: main
+      import: config/deps.yml
   self:
     path: config

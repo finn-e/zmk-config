@@ -6,13 +6,13 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: finne
-      url-base: https://github.com/finn-e
+    - name: nathandsanta
+      url-base: https://github.com/nathandsanta
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: chocofi-zmk-module
-      remote: finne
+    - name: chocofi
+      remote: nathandsanta
   self:
     path: config

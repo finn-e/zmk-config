@@ -20,5 +20,11 @@ manifest:
     - name: zmk-fingerpunch-keyboards
       remote: sadek
       revision: main
+    - name: vik-core
+      remote: sadek
+      revision: main
+    - name: fingerpunch-controllers
+      remote: sadek
+      revision: main
   self:
     path: config

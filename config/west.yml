@@ -8,12 +8,17 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: nathandsanta
       url-base: https://github.com/nathandsanta
+    - name: sadek
+      url-base: https://github.com/sadekbaroudi
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
     - name: chocofi
       remote: nathandsanta
+      revision: main
+    - name: zmk-fingerpunch-keyboards
+      remote: sadek
       revision: main
   self:
     path: config

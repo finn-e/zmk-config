@@ -1,12 +1,5 @@
 {
-  "name": "Okinanami",
-  "vendor": "Custom",
-  "productId": "0x0001",
-  "lighting": "none",
   "layouts": {
-    "labels": [
-      "Base"
-    ],
     "keymap": [
       // Left Hand - Row 1
       { "matrix": [0, 0], "x": 0, "y": 0 },

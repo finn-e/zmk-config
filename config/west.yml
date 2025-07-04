@@ -15,6 +15,5 @@ manifest:
     - name: okinanami-zmk
       remote: finn-e
       revision: main
-      import: west.yml
   self:
     path: config

@@ -12,7 +12,7 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: tanpa-zmk-module
+    - name: hiroinami-zmk-module
       remote: finn-e
       revision: trunk
   self:

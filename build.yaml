@@ -22,17 +22,17 @@ include:
   - board: nice_nano_v2
     shield: settings_reset
   - board: nice_nano_v2
-    shield: hiroinami_left
+    shield: fuckin_aurora_left
   - board: nice_nano_v2
-    shield: hiroinami_right
+    shield: fuckin_aurora_right
   - board: nice_nano_v2
-    shield: hiroinami_left
+    shield: fuckin_aurora_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: hiroinami_left_studio
+    artifact-name: fuckin_aurora_left_studio
   - board: nice_nano_v2
-    shield: hiroinami_right
+    shield: fuckin_aurora_right
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: hiroinami_right_studio
+    artifact-name: fuckin_aurora_right_studio
   

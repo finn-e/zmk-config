@@ -19,16 +19,18 @@
                 &kp TAB  &kp Q     &kp W     &kp E     &kp R     &kp T                               &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
                 &gresc   &kp A     &kp S     &kp D     &kp F     &kp G                               &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp APOS
                 &kp LSFT &kp Z     &kp X     &kp C     &kp V     &kp B                               &kp N     &kp M     &kp COMMA &kp DOT   &kp UP    &kp RET
-                &mo 4    &kp LGUI  &kp LALT  &kp LCTRL &mo 3     &mo 1     &kp SPACE       &kp SPACE &mo 2     &mo 3     &kp FSLH  &kp LEFT  &kp DOWN  &kp RIGHT
+                &mo 4    &kp LGUI  &kp LALT  &kp LCTRL &mo 3                                                   &mo 3     &kp FSLH  &kp LEFT  &kp DOWN  &kp RIGHT
+                                                       &mo 1     &kp SPACE                           &kp SPACE &mo 2
             >;
-        };
+        };    
         num {
             display-name = "Numb";
             bindings = <
                 &kp LS(GRAVE) &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)                            &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &kp EQUAL
                 &kp GRAVE     &kp N1     &kp N2     &kp N3     &kp N4     &kp N5                                &kp N6     &kp N7     &kp N8     &kp N9     &kp N0     &kp MINUS
                 &kp F11       &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                                &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &kp F12
-                &trans        &trans     &trans     &trans     &trans     &trans &trans             &trans      &trans     &trans     &trans     &trans     &trans     &trans
+                &trans        &trans     &trans     &trans     &trans                                                      &trans     &trans     &trans     &trans     &trans
+                                                               &trans     &trans                                &trans     &trans
             >;
         };
         func {
@@ -37,7 +39,8 @@
                 &kp LS(F11) &kp LS(F1) &kp LS(F2) &kp LS(F3) &kp LS(F4) &kp LS(F5)                            &kp LS(F6) &kp LS(F7) &kp LS(F8) &kp LS(F9) &kp LS(F10) &kp LS(F12)
                 &kp F11     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                                &kp F6     &kp F7     &kp F8     &kp F9     &kp F10     &kp F12
                 &trans      &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                                &kp F6     &kp F7     &kp F8     &kp F9     &kp F10     &trans
-                &trans      &trans     &trans     &trans     &trans     &trans &trans             &trans      &trans     &trans     &trans     &trans     &trans      &trans
+                &trans        &trans     &trans     &trans     &trans                                                      &trans     &trans     &trans     &trans     &trans
+                                                               &trans     &trans                                &trans     &trans
             >;
         };
         bt {
@@ -46,7 +49,8 @@
                 &bt BT_CLR_ALL &bt BT_CLR   &bt BT_CLR   &bt BT_PRV   &bt BT_NXT   &none                                       &none        &bt BT_NXT   &bt BT_PRV   &bt BT_CLR   &bt BT_CLR   &bt BT_CLR_ALL
                 &bt BT_SEL 0   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5                                &bt BT_SEL 5 &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
                 &bootloader    &trans       &trans       &trans       &trans       &trans                                      &trans       &trans       &trans       &trans       &trans       &bootloader
-                &studio_unlock &trans       &trans       &trans       &trans       &trans       &trans             &trans      &trans       &trans       &trans       &trans       &trans       &studio_unlock
+                &studio_unlock &trans       &trans       &trans       &trans                                                                &trans       &trans       &trans       &trans       &studio_unlock
+                                                                      &trans       &trans                                      &trans       &trans 
             >;
         };
         fin {
@@ -55,7 +59,8 @@
                 &none    &kp J     &kp Y     &kp B     &kp P     &none                               &none     &kp C     &kp L     &kp F     &kp W     &none
                 &none    &kp A     &kp I     &kp O     &kp E     &none                               &none     &kp D     &kp N     &kp S     &kp R     &none
                 &none    &none     &kp K     &kp X     &kp U     &none                               &none     &kp G     &kp M     &kp V     &kp UP    &none
-                &mo 4    &kp LGUI  &kp LALT  &kp LCTRL &mo 3     &mo 1     &kp SPACE       &kp H     &kp T     &mo 3     &kp FSLH  &kp LEFT  &kp DOWN  &kp RIGHT
+                &mo 4    &kp LGUI  &kp LALT  &kp LCTRL &mo 3                                                   &mo 3     &kp FSLH  &kp LEFT  &kp DOWN  &kp RIGHT
+                                                       &mo 1     &kp SPACE                           &kp H     &kp T   
             >;
         };
    };

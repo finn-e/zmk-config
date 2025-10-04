@@ -201,10 +201,10 @@ FCOMBO(V,          &as V,              &kp LC(LA(T)),         &none,            
 FCOMBO(BT,         &sl BT,             &bt BT_CLR,            &bt BT_CLR,            &bt BT_CLR_ALL,         TLR BLR TLM BLM,    TRR BRR TRM BRM)
 //  |x|x| |
 //  |x|x| |
-OCOMBO(NAVLOCK,   &sticky_navlock,     TLR BLR TLI BLI,                   TRR BRR TRI BRI)
+OCOMBO(NAVLOCK,    &sticky_navlock,    TLR BLR TLI BLI,       TRR BRR TRI BRI)
 //  |x| |x|
 //  |x| |x|
-OCOMBO(NUMLOCK,   &sticky_numlock,     TLM BLM TLI BLI,                   TRM BRM TRI BRI)
+OCOMBO(NUMLOCK,    &sticky_numlock,    TLM BLM TLI BLI,       TRM BRM TRI BRI)
 //  | |x|x|
 //  | |x|x|
 FCOMBO(RET,        &kp RET,            &kp LS(RET),           &kp LS(RET),           &kp LS(RET),            TLR TLM TLI,        TRR TRM TRI)
@@ -246,6 +246,3 @@ OCOMBO(UNDO2,      &kp LC(Z),          TLR TLM TLI BLM BLI,   TRR TRM TRI BRM BR
 OCOMBO(REDO2,      &kp LS(LC(Z)),      TLR TLM TLI BLR BLM,   TRR TRM TRI BRR BRM)
 //  |x|x|x|
 //  |x|x| |
-OCOMBO(MISC,       &sl MISC,           TLR BLR TLM BLM TLI BLI,  TRR BRR TRM BRM TRI BRI)
-//  |x|x|x|
-//  |x|x|x|

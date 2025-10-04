@@ -171,7 +171,7 @@ FCOMBO(COMMA,      &kp COMMA,          &kp QMARK,             &kp SEMI,         
 FCOMBO(DASH,       &kp MINUS,          &kp UNDER,             &kp TILDE,             &kp LS(RA(SLASH)),      TLR BLR TLM,        TRR BRR TRM)
 //  |x| |x|
 //  |x| | |
-FCOMBO(DOT,        &kp DOT,            &kp EXCL,              &kp COLON,             &kp RA(N8),             TLR BLR BLI,        TRR BRM BRI)
+FCOMBO(DOT,        &kp DOT,            &kp EXCL,              &kp COLON,             &kp RA(N8),             TLR BLR BLI,        TRR BRR BRI)
 //  |x| | |
 //  |x| |x|
 FCOMBO(P,          &as P,              &kp PRINTSCREEN,       &kp LS(PRINTSCREEN),   &as F19,                TLM BLM TLR,        TRM BRM TRR)

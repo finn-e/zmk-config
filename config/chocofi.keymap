@@ -115,11 +115,11 @@
 
     keymap {
         compatible = "zmk,keymap";
-  // Keymap diagrams use this:
-  |-----|
-  | TAP |
-  |HOLD |
-  |-----|
+  // Keymap diagram keys use this format:
+  // |-----|
+  // | TAP |
+  // |HOLD |
+  // |-----|
   // Tab Dance is a Tap dance with the following rules:
   // 1 tap - tab
   // 2 taps - toggle qwerty layer

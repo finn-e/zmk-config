@@ -186,7 +186,7 @@ FCOMBO(X,          &as X,              &kp C_VOL_UP,          &kp C_VOL_DN,     
 FCOMBO(Z,          &as Z,              &kp C_BRI_UP,          &kp C_BRI_DN,          &kp C_BKLT_TOG,         TLM BLM BLI,        TRM BRM BRI)
 //  | |x| |
 //  | |x|x|
-FCOMBO(Q,          &as Q,              TLI BLI TLR,        TRI BRI TRR)
+OCOMBO(Q,          &as Q,              TLI BLI TLR,           TRI BRI TRR)
 //  |x| |x|
 //  | | |x|
 FCOMBO(J,          &as J,              &kp C_NEXT,            &kp C_PREV,            &kp C_PP,               TLI BLI BLR,        TRI BRI BRR)

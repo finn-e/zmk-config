@@ -60,8 +60,8 @@
 #define QWE  1
 #define QNUM 2
 #define NAV  3
-#define DESK 4
-#define WIN  5
+#define WIN  4
+#define DESK 5
 #define BT   6
 #define MISC 7
 
@@ -113,36 +113,104 @@
 
     keymap {
         compatible = "zmk,keymap";
+  // Keymap diagrams use this:
+  |-----|
+  | TAP |
+  |HOLD |
+  |-----|
+  // Tab Dance is a Tap dance with the following rules:
+  // 1 tap - tab
+  // 2 taps - toggle qwerty layer
+  // 3 taps - nothing
+  // 4 taps - reset
+  // 5 taps - nothing
+  // 6 taps - bootloader
 
         bougie {
+  // |------------------------------                 -------------------------------
+  // | BT0 | BT1 | BT2 | BT3 | C-x |                 | C-x | BT3 | BT2 | BT1 | BT0 |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // | &kr |  E  |  A  |  T  | C-c |                 | C-c |  T  |  A  |  E  | &kr |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // | TAB |  I  |  O  |  N  | C-v |                 | C-v |  N  |  O  |  I  | TAB |
+  // |DANCE|     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------------     -------------------------------------
+  //                   |     |BSPC | SPC |     | SPC |BSPC | TAB |
+  //                   | NAV |DESK | NAV |     | NAV |DESK |DANCE|
+  //                   -------------------     -------------------
+            display-name = "bou";
             bindings = <
   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &kp LC(X)      &kp LC(X)    &bt BT_SEL 3   &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
   &key_repeat     &as E         &as A         &as T          &kp LC(C)      &kp LC(C)    &as T          &as A         &as E         &key_repeat
   &kp TAB         &as I         &as O         &as N          &kp LC(V)      &kp LC(V)    &as N          &as O         &as I         &kp TAB
-                                &mo NAV       &lt DESK BSPC  &lt NAV SPC    &lt NAV SPC  &lt DESK BSPC  &qwereset
+                                &mo NAV       &lt DESK BSPC  &lt NAV SPC    &lt NAV SPC  &lt DESK BSPC  &tabdance
             >;
         };
 
         qwerty {
+  // |------------------------------                 -------------------------------
+  // |  Q  |  W  |  E  |  R  |  T  |                 |  Y  |  U  |  I  |  O  |  P  |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // |  A  |  S  |  D  |  F  |  G  |                 |  H  |  J  |  K  |  L  |  ;  |
+  // |     |     |     |     |     |                 |     |     |     |     |SHIFT|
+  // |------------------------------                 -------------------------------
+  // |  Z  |  X  |  C  |  V  |  B  |                 |  N  |  M  |  ,  |  .  |  /  |
+  // |SHIFT|CTRL |LALT | GUI |     |                 |     | GUI |LALT |CTRL |SHIFT|
+  // |------------------------------------     -------------------------------------
+  //                   | NUM |BSPC | SPC |     | RET | DEL | TAB |
+  //                   |     |     |     |     |     |     |DANCE|
+  //                   -------------------     -------------------------
+            display-name = "qwe";
             bindings = <
-  &kp Q         &kp W  &kp E     &kp R     &kp T            &kp Y    &kp U       &kp I      &kp O    &kp P
-  &kp A         &kp S  &kp D     &kp F     &kp G            &kp H    &kp J       &kp K      &kp L    &kp SEMI
-  &mt Z LSHIFT  &kp X  &kp C     &kp V     &kp B            &kp N    &kp M       &kp COMMA  &kp DOT  &mt FSLH RSHIFT
-                       &sl QNUM  &kp BSPC  &kp SPACE        &kp RET  &kp DELETE  &qwereset
+  &kp Q         &kp W        &kp E       &kp R       &kp T                         &kp Y    &kp U       &kp I           &kp O          &kp P
+  &kp A         &kp S        &kp D       &kp F       &kp G                         &kp H    &kp J       &kp K           &kp L          &mt SEMI RSHIFT
+  &mt Z LSHIFT  &mt X LCTRL  &mt C LALT  &mt LGUI V  &kp B                         &kp N    &mt RGUI M  &mt LALT COMMA  &MT RCTRL DOT  &mt FSLH RSHIFT
+                                         &sl QNUM    &kp BSPC  &kp SPC    &kp RET  &kp DEL  &tabdance
             >;
         };
 
         qwenum {
+  // |------------------------------                 -------------------------------
+  // |  1  |  2  |  3  |  4  |  5  |                 |  6  |  7  |  8  |  9  |  0  |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // |  7  |  2  |  1  |  0  |     |                 |     |  4  |  5  |  6  |  0  |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // |  6  |  5  |  4  |  3  |     |                 |     |  1  |  2  |  3  |  0  |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------------     -------------------------------------
+  //                   |     |  8  |  9  |     |  0  |  0  | TAB |
+  //                   |     |     |     |     |     |     |DANCE|
+  //                   -------------------     -------------------
+            display-name = "qw#";
             bindings = <
   &as N1  &as N2  &as N3  &as N4  &as N5    &as N6  &as N7  &as N8  &as N9  &as N0
-  &as N8  &as N6  &as N4  &as N2  &trans    &trans  &as N4  &as N5  &as N6  &as N0
-  &as N9  &as N7  &as N5  &as N3  &trans    &trans  &as N1  &as N2  &as N3  &as N0
-                  &trans  &as N1  &as N0    &as N0  &as N1  &trans
+  &as N7  &as N2  &as N1  &as N0  &none     &none   &as N4  &as N5  &as N6  &as N0
+  &as N6  &as N5  &as N4  &as N3  &none     &none   &as N1  &as N2  &as N3  &as N0
+                  &trans  &as N8  &as N9    &as N0  &as N0  &trans
             >;
         };
     
 
         nav {
+  // |------------------------------                 -------------------------------
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // |  <- |  ↓  |  ↑  |  -> |     |                 |     | <-- |  ↓  |  ↑  |  -> |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // | HOM |PG_UP|PG_DN| END |     |                 |     | HOM |PG_UP|PG_DN| END |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------------     -------------------------------------
+  //                   |     |BSPC | SPC |     | SPC |BSPC |     |
+  //                   |     | WIN | NAV |     | NAV | WIN |     |
+  //                   -------------------     -------------------
+            display-name = "nav";
             bindings = <
   &none     &none     &none      &none      &trans    &trans  &none     &none      &none      &none
   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans    &trans  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
@@ -150,8 +218,20 @@
                       &none      &trans     &trans    &trans  &trans    &none
             >;
         };
+        windows {
+            // Arrows from Nav but with Gui/Shift-Gui
+            display-name = "win";
+            bindings = <
+  &none             &none             &none           &none              &trans    &trans  &none             &none           &none             &none
+  &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(UP)      &kp LG(RIGHT)      &trans    &trans  &kp LG(LEFT)      &kp LG(UP)      &kp LG(DOWN)      &kp LG(RIGHT)
+  &kp LS(LG(LEFT))  &kp LS(LG(DOWN))  &kp LS(LG(UP))  &kp LS(LG(RIGHT))  &trans    &trans  &kp LS(LG(LEFT))  &kp LS(LG(UP))  &kp LS(LG(DOWN))  &kp LS(LG(RIGHT))
+                                      &none           &trans             &trans    &trans  &trans            &none
+            >;
+        };
 
         desktops {
+            // Arrows from Nav but with Ctrl-Gui/Shift-Ctrl-Gui        
+            display-name = "dsk";
             bindings = <
   &none                &none                 &none                &none                  &trans    &trans  &none                  &none                &none                 &none
   &kp LC(LG(LEFT))     &kp LC(LG(DOWN))      &kp LC(LG(UP))       &kp LC(LG(RIGHT))      &trans    &trans  &kp LC(LG(LEFT))       &kp LC(LG(UP))       &kp LC(LG(DOWN))      &kp LC(LG(RIGHT))
@@ -160,29 +240,95 @@
             >;
         };
 
-        windows {
+        numbers {
+  // |------------------------------                 -------------------------------
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // |  7  |  2  |  1  |  0  |     |                 |     |  0  |  1  |  2  |  7  |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // |  6  |  5  |  4  |  3  |     |                 |     |  3  |  4  |  5  |  6  |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------------     -------------------------------------
+  //                   |     |  8  |  9  |     |  9  |  8  |     |
+  //                   |     |     |     |     |     |     |     |
+  //                   -------------------     -------------------
+            display-name = "num";
             bindings = <
-  &none             &none             &none           &none              &trans    &trans  &none             &none           &none             &none
-  &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(UP)      &kp LG(RIGHT)      &trans    &trans  &kp LG(LEFT)      &kp LG(UP)      &kp LG(DOWN)      &kp LG(RIGHT)
-  &kp LS(LG(LEFT))  &kp LS(LG(DOWN))  &kp LS(LG(UP))  &kp LS(LG(RIGHT))  &trans    &trans  &kp LS(LG(LEFT))  &kp LS(LG(UP))  &kp LS(LG(DOWN))  &kp LS(LG(RIGHT))
-                                      &none           &trans             &trans    &trans  &trans            &none
+  &none   &none   &none   &none   &none                   &none   &none   &none   &none   &none
+  &as N7  &as N2  &as N1  &as N0  &none                   &none   &as N0  &as N1  &as N2  &as N7
+  &as N6  &as N5  &as N4  &as N3  &none                   &none   &as N3  &as N4  &as N5  &as N6
+                          &none   &as N8  &as N9  &kp N9  &as N8  &none
             >;
         };
-        bt {
+
+        symbols {
+  // |------------------------------                 -------------------------------
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // |  &  |  @  |  !  |  )  |     |                 |     |  )  |  !  |  @  |  &  |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // |  ^  |  %  |  $  |  #  |     |                 |     |  #  |  $  |  %  |  ^  |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------------     -------------------------------------
+  //                   |     |  *  |  (  |     |  (  |  *  |     |
+  //                   |     |     |     |     |     |     |     |
+  //                   -------------------     -------------------
+            display-name = "sym";
             bindings = <
-  &none           &none         &none         &none         &trans    &trans  &none         &none         &none         &none
-  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans    &trans  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
-  &bt BT_CLR_ALL  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &trans    &trans  &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &bt BT_CLR_ALL
-                                &none         &trans        &trans    &trans  &trans        &none
+  &none       &none       &none       &none       &none                               &none       &none       &none       &none       &none
+  &kp LS(N7)  &kp LS(N2)  &kp LS(N1)  &kp LS(N0)  &none                               &none       &kp LS(N0)  &kp LS(N1)  &kp LS(N2)  &kp LS(N7)
+  &kp LS(N6)  &kp LS(N5)  &kp LS(N4)  &kp LS(N3)  &none                               &none       &kp LS(N3)  &kp LS(N4)  &kp LS(N5)  &kp LS(N6)
+                                      &none       &kp LS(N8)  &kp LS(N9)  &kp LS(N9)  &kp LS(N8)  &none
+            >;
+        };
+
+        bt {
+  // |------------------------------                 -------------------------------
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // | BT0 | BT1 | BT2 | BT3 |     |                 |     | BT3 | BT2 | BT1 | BT0 |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // | BT4 |BTNXT|BTPRV|BTCLR|     |                 |     |BTCLR|BTPRV|BTNXT| BT4 |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------------     -------------------------------------
+  //                   |     |BSPC | SPC |     | SPC |BSPC |     |
+  //                   |     | WIN | NAV |     | NAV | WIN |     |
+  //                   -------------------     -------------------
+            display-name = "bt";
+            bindings = <
+  &none           &none         &none         &none         &none                   &none   &none         &none         &none         &none
+  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none                   &none   &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
+  &bt BT_SEL 4    &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none                   &none   &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &bt BT_SEL 4
+                                              &none         &trans  &trans  &trans  &trans  &none
             >;
         };
 
         misc {
+  // |------------------------------                 -------------------------------
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // |BriUp|Mute |VolUp|RESET|     |                 |     |RESET|VolUp|Mute |BriUp|
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------                 -------------------------------
+  // |BriDn|TogBL|VolDn|BOOT |     |                 |     |BOOT |TogBL|VolDn|BriDn|
+  // |     |     |     |     |     |                 |     |     |     |     |     |
+  // |------------------------------------     -------------------------------------
+  //                   |     |BSPC | SPC |     | SPC |BSPC |     |
+  //                   |     | WIN | NAV |     | NAV | WIN |     |
+  //                   -------------------     -------------------
+            display-name = "msc";
             bindings = <
-  &none           &none          &none         &none         &trans    &trans  &none         &none         &none          &none
-  &kp C_VOL_DN    &kp C_MUTE     &kp C_VOL_UP  &sys_reset    &trans    &trans  &sys_reset    &kp C_VOL_UP  &kp C_MUTE     &kp C_VOL_DN
-  &kp C_BRI_DN    &kp C_BKLT_TOG &kp C_BRI_UP  &bootloader   &trans    &trans  &bootloader   &kp C_BRI_UP  &kp C_BKLT_TOG &kp C_BRI_DN
-                                 &none         &trans        &trans    &trans  &trans        &none
+  &none           &none          &none         &none         &none                   &none   &none        &none         &none           &none
+  &kp C_BRI_UP    &kp C_MUTE     &kp C_VOL_UP  &sys_reset    &none                   &none   &sys_reset   &kp C_VOL_UP  &kp C_MUTE      &kp C_VOL_DN
+  &kp C_BRI_DN    &kp C_BKLT_TOG &kp C_VOL_DN  &bootloader   &none                   &none   &bootloader  &kp C_BRI_UP  &kp C_BKLT_TOG  &kp C_BRI_DN
+                                               &none         &trans  &trans  &trans  &trans  &none
             >;
         };
 

@@ -6,14 +6,14 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
-    - name: santa
-      url-base: https://github.com/nathandsanta
+    - name: finn-e
+      url-base: https://github.com/finn-e
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: chocofi
-      remote: santa
-      revision: main
+    - name: zmk-keyboard-chocofi
+      remote: finn-e
+      revision: trunk
   self:
     path: config

@@ -108,22 +108,22 @@ FCOMBO(LCTRL,      &sk_lctrl_lock,     &kp RBKT,              &kp LBKT,         
 FCOMBO(LMETA,      &sk_lmeta_lock,     &kp RPAR,              &kp LPAR,              &bt BT_SEL 3,           TLI BLI,            TRI BRI)
 //| | | |x|
 //| | | |x|
-FCOMBO(MOUSEL,     &mkp LCLK,          &none, 				  &none,                 &none,                  TLP TLI,            TRP TRI)
+OCOMBO(MOUSEL,     &mkp LCLK,          TLP TLI,               TRP TRI)
 //|x| | |x|
 //| | | | |
-FCOMBO(MOUSEM,     &mkp MCLK,          &none, 				  &none,                 &none,                  TLP TLM,            TRP BRM)
+OCOMBO(MOUSEM,     &mkp MCLK,          TLP TLM,               TRP BRM)
 //|x| |x| |
 //| | | | |
-FCOMBO(MOUSER,     &mkp RCLK,          &none, 				  &none,                 &none,                  TLP TLR,            TRP TRM)
+OCOMBO(MOUSER,     &mkp RCLK,          TLP TLR,               TRP TRM)
 //|x|x| | |
 //| | | | |
-FCOMBO(PPASTE,     &kp LC(V),          TLP BLI,            TRP BRI)
+OCOMBO(PPASTE,     &kp LC(V),          TLP BLI,               TRP BRI)
 //|x| | | |
 //| | | |x|
-FCOMBO(PCOPY,      &kp LC(C),          TLP BLM,            TRP BRM)
+OCOMBO(PCOPY,      &kp LC(C),          TLP BLM,               TRP BRM)
 //|x| | | |
 //| | |x| |
-FCOMBO(PCUT,       &kp LC(X),          TLP BLR,            TRP BRR)
+OCOMBO(PCUT,       &kp LC(X),          TLP BLR,               TRP BRR)
 //|x| | | |
 //| |x| | |
 FCOMBO(H,          &as H,              &kp AMPS,              &kp PIPE,              &as F11,                TLR TLM,            TRR TRM)

@@ -12,9 +12,7 @@
     behaviors {
 
         hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
+            compatible = "zmk,behavior-hold-tap";            #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -24,9 +22,7 @@
         };
 
         tl: tapping_layers {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAPPING_LAYERS";
-            bindings = <&mo>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -36,9 +32,7 @@
         };
 
         lkr: layer_key-repeat {
-            compatible = "zmk,behavior-hold-tap";
-            label = "layer_key-repeat";
-            bindings = <&mo>, <&key_repeat>;
+            compatible = "zmk,behavior-hold-tap";            bindings = <&mo>, <&key_repeat>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -46,9 +40,7 @@
         };
 
         th_Th: th_Th {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TH_TH";
-            bindings = <&mo>, <&Th>;
+            compatible = "zmk,behavior-hold-tap";            bindings = <&mo>, <&Th>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -56,9 +48,7 @@
         };
 
         caps_n_tap: caps_n_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "CAPS_N_TAP";
-            bindings = <&caps_word>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";            bindings = <&caps_word>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -66,9 +56,7 @@
         };
 
         kr_n_tap: kr_n_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "KR_N_TAP";
-            bindings = <&key_repeat>, <&kp>;
+            compatible = "zmk,behavior-hold-tap";            bindings = <&key_repeat>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -76,18 +64,14 @@
         };
 
         u_paste: u_paste {
-            compatible = "zmk,behavior-mod-morph";
-            label = "U_PASTE";
-            bindings = <&kp U>, <&kp LC(V)>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&kp U>, <&kp LC(V)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
         layer_u_paste: layer_u_paste {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_U_PASTE";
-            bindings = <&mo>, <&u_paste>;
+            compatible = "zmk,behavior-hold-tap";            bindings = <&mo>, <&u_paste>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -95,18 +79,14 @@
         };
 
         w_copy: w_copy {
-            compatible = "zmk,behavior-mod-morph";
-            label = "W_COPY";
-            bindings = <&kp W>, <&kp LC(C)>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&kp W>, <&kp LC(C)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
         layer_w_copy: layer_w_copy {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_W_COPY";
-            bindings = <&mo>, <&w_copy>;
+            compatible = "zmk,behavior-hold-tap";            bindings = <&mo>, <&w_copy>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -114,27 +94,21 @@
         };
 
         j_cut: j_cut {
-            compatible = "zmk,behavior-mod-morph";
-            label = "J_CUT";
-            bindings = <&kp J>, <&kp LC(X)>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&kp J>, <&kp LC(X)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
         o_save: o_save {
-            compatible = "zmk,behavior-mod-morph";
-            label = "O_SAVE";
-            bindings = <&kp O>, <&kp LC(S)>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&kp O>, <&kp LC(S)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
         };
 
         mod_o_save: mod_o_save {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOD_O_SAVE";
-            bindings = <&kp>, <&o_save>;
+            compatible = "zmk,behavior-hold-tap";            bindings = <&kp>, <&o_save>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -142,126 +116,98 @@
         };
 
         the: the {
-            compatible = "zmk,behavior-mod-morph";
-            label = "THE";
-            bindings = <&lthe>, <&uThe>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&lthe>, <&uThe>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         from: from {
-            compatible = "zmk,behavior-mod-morph";
-            label = "FROM";
-            bindings = <&lfrom>, <&uFrom>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&lfrom>, <&uFrom>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         have: have {
-            compatible = "zmk,behavior-mod-morph";
-            label = "HAVE";
-            bindings = <&lhave>, <&uHave>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&lhave>, <&uHave>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         because: because {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BECAUSE";
-            bindings = <&lbecause>, <&uBecause>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&lbecause>, <&uBecause>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         their: their {
-            compatible = "zmk,behavior-mod-morph";
-            label = "THEIR";
-            bindings = <&ltheir>, <&uTheir>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&ltheir>, <&uTheir>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         there: there {
-            compatible = "zmk,behavior-mod-morph";
-            label = "THERE";
-            bindings = <&lthere>, <&uThere>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&lthere>, <&uThere>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         theyre: theyre {
-            compatible = "zmk,behavior-mod-morph";
-            label = "THEYRE";
-            bindings = <&ltheyre>, <&uTheyre>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&ltheyre>, <&uTheyre>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         where: where {
-            compatible = "zmk,behavior-mod-morph";
-            label = "WHERE";
-            bindings = <&lwhere>, <&uWhere>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&lwhere>, <&uWhere>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         will: will {
-            compatible = "zmk,behavior-mod-morph";
-            label = "WILL";
-            bindings = <&lwill>, <&uWill>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&lwill>, <&uWill>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         would: would {
-            compatible = "zmk,behavior-mod-morph";
-            label = "WOULD";
-            bindings = <&uWould>, <&uWould>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&uWould>, <&uWould>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         aint: aint {
-            compatible = "zmk,behavior-mod-morph";
-            label = "AINT";
-            bindings = <&laint>, <&uAint>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&laint>, <&uAint>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         yall: yall {
-            compatible = "zmk,behavior-mod-morph";
-            label = "YALL";
-            bindings = <&lyall>, <&uYall>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&lyall>, <&uYall>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         shant: shant {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SHANT";
-            bindings = <&lshant>, <&uShant>;
+            compatible = "zmk,behavior-mod-morph";            bindings = <&lshant>, <&uShant>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         layer_the: layer_the {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_THE";
-            bindings = <&mo>, <&there>;
+            compatible = "zmk,behavior-hold-tap";            bindings = <&mo>, <&there>;
 
             #binding-cells = <2>;
             tapping-term-ms = <150>;
@@ -273,205 +219,147 @@
         ht: ht {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp H &kp T>;
-            label = "HT";
-        };
+            bindings = <&kp H &kp T>;        };
 
         double0: double0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N0 &kp N0>;
-            label = "DOUBLE0";
-        };
+            bindings = <&kp N0 &kp N0>;        };
 
         Th: Th {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp H>;
-            label = "TH";
-        };
+            bindings = <&kp LS(T) &kp H>;        };
 
         lthe: lthe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E &kp SPACE>;
-            label = "LTHE";
-        };
+            bindings = <&kp T &kp H &kp E &kp SPACE>;        };
 
         uThe: uThe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp H &kp E &kp SPACE>;
-            label = "UTHE";
-        };
+            bindings = <&kp LS(T) &kp H &kp E &kp SPACE>;        };
 
         lhave: lhave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp H &kp A &kp V &kp E &kp SPACE>;
-            label = "LHAVE";
-        };
+            bindings = <&kp H &kp A &kp V &kp E &kp SPACE>;        };
 
         uHave: uHave {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(H) &kp A &kp V &kp E &kp SPACE>;
-            label = "UHAVE";
-        };
+            bindings = <&kp LS(H) &kp A &kp V &kp E &kp SPACE>;        };
 
         lfrom: lfrom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F &kp R &kp O &kp M &kp SPACE>;
-            label = "LFROM";
-        };
+            bindings = <&kp F &kp R &kp O &kp M &kp SPACE>;        };
 
         uFrom: uFrom {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(F) &kp R &kp O &kp M &kp SPACE>;
-            label = "UFROM";
-        };
+            bindings = <&kp LS(F) &kp R &kp O &kp M &kp SPACE>;        };
 
         lbecause: lbecause {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp B &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;
-            label = "LBECAUSE";
-        };
+            bindings = <&kp B &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;        };
 
         uBecause: uBecause {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(B) &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;
-            label = "UBECAUSE";
-        };
+            bindings = <&kp LS(B) &kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;        };
 
         ltheir: ltheir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E &kp I &kp R &kp SPACE>;
-            label = "LTHEIR";
-        };
+            bindings = <&kp T &kp H &kp E &kp I &kp R &kp SPACE>;        };
 
         uTheir: uTheir {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp H &kp E &kp I &kp R &kp SPACE>;
-            label = "UTHEIR";
-        };
+            bindings = <&kp LS(T) &kp H &kp E &kp I &kp R &kp SPACE>;        };
 
         lthere: lthere {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E &kp R &kp E &kp SPACE>;
-            label = "LTHERE";
-        };
+            bindings = <&kp T &kp H &kp E &kp R &kp E &kp SPACE>;        };
 
         uThere: uThere {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp H &kp E &kp R &kp E &kp SPACE>;
-            label = "UTHERE";
-        };
+            bindings = <&kp LS(T) &kp H &kp E &kp R &kp E &kp SPACE>;        };
 
         ltheyre: ltheyre {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E &kp Y &kp SQT &kp R &kp E &kp SPACE>;
-            label = "LTHEYRE";
-        };
+            bindings = <&kp T &kp H &kp E &kp Y &kp SQT &kp R &kp E &kp SPACE>;        };
 
         uTheyre: uTheyre {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp H &kp E &kp Y &kp SQT &kp R &kp E &kp SPACE>;
-            label = "UTHEYRE";
-        };
+            bindings = <&kp LS(T) &kp H &kp E &kp Y &kp SQT &kp R &kp E &kp SPACE>;        };
 
         lwhere: lwhere {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &kp H &kp E &kp R &kp E &kp SPACE>;
-            label = "LWHERE";
-        };
+            bindings = <&kp W &kp H &kp E &kp R &kp E &kp SPACE>;        };
 
         uWhere: uWhere {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(W) &kp H &kp E &kp R &kp E &kp SPACE>;
-            label = "UWHERE";
-        };
+            bindings = <&kp LS(W) &kp H &kp E &kp R &kp E &kp SPACE>;        };
 
         lwill: lwill {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &kp I &kp L &kp L &kp SPACE>;
-            label = "LWILL";
-        };
+            bindings = <&kp W &kp I &kp L &kp L &kp SPACE>;        };
 
         uWill: uWill {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(W) &kp I &kp L &kp L &kp SPACE>;
-            label = "UWILL";
-        };
+            bindings = <&kp LS(W) &kp I &kp L &kp L &kp SPACE>;        };
 
         lwould: lwould {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &kp O &kp U &kp L &kp D &kp SPACE>;
-            label = "LWOULD";
-        };
+            bindings = <&kp W &kp O &kp U &kp L &kp D &kp SPACE>;        };
 
         uWould: uWould {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(W) &kp O &kp U &kp L &kp D &kp SPACE>;
-            label = "UWOULD";
-        };
+            bindings = <&kp LS(W) &kp O &kp U &kp L &kp D &kp SPACE>;        };
 
         laint: laint {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp I &kp N &kp SQT &kp T &kp SPACE>;
-            label = "LAINT";
-        };
+            bindings = <&kp A &kp I &kp N &kp SQT &kp T &kp SPACE>;        };
 
         uAint: uAint {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp I &kp N &kp SQT &kp T &kp SPACE>;
-            label = "UAINT";
-        };
+            bindings = <&kp LS(A) &kp I &kp N &kp SQT &kp T &kp SPACE>;        };
 
         lyall: lyall {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y &kp SQT &kp A &kp L &kp L &kp SPACE>;
-            label = "LYALL";
-        };
+            bindings = <&kp Y &kp SQT &kp A &kp L &kp L &kp SPACE>;        };
 
         uYall: uYall {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(Y) &kp SQT &kp A &kp L &kp L &kp SPACE>;
-            label = "UYALL";
-        };
+            bindings = <&kp LS(Y) &kp SQT &kp A &kp L &kp L &kp SPACE>;        };
 
         lshant: lshant {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S &kp H &kp A &kp N &kp SQT &kp T &kp SPACE>;
-            label = "LSHANT";
-        };
+            bindings = <&kp S &kp H &kp A &kp N &kp SQT &kp T &kp SPACE>;        };
 
         uShant: uShant {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(S) &kp H &kp A &kp N &kp SQT &kp T &kp SPACE>;
-            label = "USHANT";
-            wait-ms = <0>;
+            bindings = <&kp LS(S) &kp H &kp A &kp N &kp SQT &kp T &kp SPACE>;            wait-ms = <0>;
             tap-ms = <0>;
         };
     };

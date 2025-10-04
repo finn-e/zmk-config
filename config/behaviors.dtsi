@@ -1,0 +1,136 @@
+        sticky_numlock: sticky_numlock {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&sl NUM>, <&tog NUM>;
+        };
+
+        sticky_navlock: sticky_navlock {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&sl NAV>, <&tog NAV>;
+        };
+
+        sticky_lshift: sticky_lshift {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&sk LSHIFT>, <&kt LSHIFT>;
+        };
+
+        sticky_lctrl: sticky_lctrl {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&sk LCTRL>, <&kt LCTRL>;
+        };
+
+        sticky_lmeta: sticky_lmeta {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&sk LMETA>, <&kt LMETA>;
+        };
+
+        sticky_lalt: sticky_lalt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&sk LEFT_ALT>, <&kt LEFT_ALT>;
+        };
+
+        sticky_ralt: sticky_ralt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&sk RIGHT_ALT>, <&kt RIGHT_ALT>;
+        };
+
+        sk_ralt_lock: sk_ralt_lock {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&sticky_ralt>, <&kt RIGHT_ALT>;
+
+            mods = <(MOD_RALT)>;
+        };
+
+        sk_lalt_lock: sk_lalt_lock {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&sticky_lalt>, <&kt LEFT_ALT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        sk_lmeta_lock: sk_lmeta_lock {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&sticky_lmeta>, <&kt LMETA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        sk_lctrl_lock: sk_lctrl_lock {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&sticky_lctrl>, <&kt LCTRL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        sk_lshift_lock: sk_lshift_lock {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&sticky_lshift>, <&kt LSHIFT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        as_ht: autoshift_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&shift>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <HOLD_TAP_TIMEOUT>;
+        };
+
+        ralt_i_cut: ralt_i_cut {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&as I>, <&kp LC(X)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        ralt_o_copy: ralt_o_copy {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&as O>, <&kp LC(C)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        ralt_n_paste: ralt_n_paste {
+            compatible = "zmk,behavior-mod-morph";
+            bindings = <&as N>, <&kp LC(V)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+        
+        ltshift: ltshift {
+            compatible = "zmk,behavior-hold-tap";
+            bindings = <&mo>, <&sk_lshift_lock>;
+        
+            #binding-cells = <2>;
+            tapping-term-ms = <HOLD_TAP_TIMEOUT>;
+        };
+
+        tabdance: tabdance {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&kp TAB>, <&kp TAB>, <&kp TAB>, <&sys_reset>, <&kp TAB>, <&bootloader>;
+        };
+
+        qwereset: qwereset {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            bindings = <&tog QWE>, <&none>, <&none>, <&sys_reset>, <&none>, <&bootloader>;
+        };

@@ -62,8 +62,10 @@
 #define NAV  3
 #define WIN  4
 #define DESK 5
-#define BT   6
-#define MISC 7
+#define NUM  6
+#define SYM  7
+#define BT   8
+#define MISC 9
 
 // CONFIG
 #define COMBO_TIMEOUT 70

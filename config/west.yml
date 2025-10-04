@@ -16,5 +16,8 @@ manifest:
     - name: zmk-keyboard-chocofi
       remote: finn-e
       revision: trunk
+    - name: Typing-Keyboard2
+      remote: finn-e
+      revision: modulize
   self:
     path: config

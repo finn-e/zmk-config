@@ -167,7 +167,7 @@
             bindings = <
   &kp Q         &kp W        &kp E       &kp R       &kp T                         &kp Y    &kp U       &kp I           &kp O          &kp P
   &kp A         &kp S        &kp D       &kp F       &kp G                         &kp H    &kp J       &kp K           &kp L          &mt SEMI RSHIFT
-  &mt Z LSHIFT  &mt X LCTRL  &mt C LALT  &mt LGUI V  &kp B                         &kp N    &mt RGUI M  &mt LALT COMMA  &MT RCTRL DOT  &mt FSLH RSHIFT
+  &mt Z LSHIFT  &mt X LCTRL  &mt C LALT  &mt LGUI V  &kp B                         &kp N    &mt RGUI M  &mt LALT COMMA  &mt RCTRL DOT  &mt FSLH RSHIFT
                                          &sl QNUM    &kp BSPC  &kp SPC    &kp RET  &kp DEL  &tabdance
             >;
         };

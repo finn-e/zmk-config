@@ -70,32 +70,32 @@ TCOMBO(##NAME, ##OUTER_BINDINGS, ##INNER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPO
 // 3 column diagrams do not include pinky (most combos)
 LTCOMBO(TP, &kp LEFT, &as N8, &as F8, TLP)
 RTCOMBO(TP, &kp RIGHT, &as N8, &as F8, TRP)
+//| | | | |
 //|x| | | |
-//| | | | |
 TCOMBO(E, &kp DOWN, &as N6, &as F6, TLR, TRR)
+//| | | | |
 //| |x| | |
-//| | | | |
 TCOMBO(A, &kp UP, &as N4, &as F4, TLM, TRM)
-//| | |x| |
 //| | | | |
+//| | |x| |
 LTCOMBO(T, &kp RIGHT, &as N2, &as F2, TLI)
 RTCOMBO(T, &kp LEFT, &as N2, &as F2, TRI)
-//| | | |x|
 //| | | | |
+//| | | |x|
 LTCOMBO(TAB, &kp END, &as N9, &as F9, BLP)
 RTCOMBO(TAB, &kp HOME, &as N9, &as F9, BRP)
-//| | | | |
 //|x| | | |
+//| | | | |
 TCOMBO(I, &kp PG_DN, &as N7, &as F7, BLR, BRR)
-//| | | | |
 //| |x| | |
-TCOMBO(O, &kp PG_UP, &as N5, &as F5, BLM, BRM)
 //| | | | |
+TCOMBO(O, &kp PG_UP, &as N5, &as F5, BLM, BRM)
 //| | |x| |
+//| | | | |
 LTCOMBO(N, &kp HOME, &as N3, &as F3, BLI)
 RTCOMBO(N, &kp END, &as N3, &as F3, BRI)
-//| | | | |
 //| | | |x|
+//| | | | |
 FCOMBO(RALT,       &sk_ralt_lock,      &kp GT,                &kp LT,                &bt BT_SEL 0,           TLP BLP,            TRP BRP)
 //|x| | | |
 //|x| | | |

@@ -126,24 +126,24 @@ OCOMBO(PCOPY,      &kp LC(C),          TLP BLM,               TRP BRM)
 OCOMBO(PCUT,       &kp LC(X),          TLP BLR,               TRP BRR)
 //|x| | | |
 //| |x| | |
-FCOMBO(H,          &as H,              &kp AMPS,              &kp PIPE,              &as F11,                TLR TLM,            TRR TRM)
-//  |x|x| |
-//  | | | |
-FCOMBO(S,          &as S,              &kp EQUAL,             &kp PLUS,              &as F9,                 TLR TLI,            TRR TRI)
-//  |x| |x|
-//  | | | |
-FCOMBO(R,          &as R,              &kp ASTERISK,          &as N0,                &as F10,                TLM TLI,            TRM TRI)
-//  | |x|x|
-//  | | | |
-FCOMBO(U,          &as U,              &kp AT,                &kp AT,                &as F15,                BLR BLM,            BRR BRM)
+FCOMBO(H,          &as H,              &kp AMPS,              &kp PIPE,              &as F11,                BLR BLM,            BRR BRM)
 //  | | | |
 //  |x|x| |
-FCOMBO(C,          &as C,              &caps_word,            &kp CAPS,              &as F14,                BLR BLI,            BRR BRI)
+FCOMBO(S,          &as S,              &kp EQUAL,             &kp PLUS,              &as F9,                 BLR BLI,            BRR BRI)
 //  | | | |
 //  |x| |x|
-FCOMBO(L,          &as L,              &kp CARET,             &kp N1,                &as F12,                BLM BLI,            BRM BRI)
+FCOMBO(R,          &as R,              &kp ASTERISK,          &as N0,                &as F10,                BLM BLI,            BRM BRI)
 //  | | | |
 //  | |x|x|
+FCOMBO(U,          &as U,              &kp AT,                &kp AT,                &as F15,                TLR TLM,            TRR TRM)
+//  |x|x| |
+//  | | | |
+FCOMBO(C,          &as C,              &caps_word,            &kp CAPS,              &as F14,                TLR TLI,            TRR TRI)
+//  |x| |x|
+//  | | | |
+FCOMBO(L,          &as L,              &kp CARET,             &kp N1,                &as F12,                TLM TLI,            TRM TRI)
+//  | |x|x|
+//  | | | |
 FCOMBO(G,          &as G,              &kp DOLLAR,            &kp RA(N5),            &as F18,                BLR TLM,            BRR TRM)
 //  | |x| |
 //  |x| | |

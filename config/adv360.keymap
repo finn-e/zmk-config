@@ -78,8 +78,8 @@
             bindings = <
 &none   &none        &none  &none  &none  &none  &tog QWE                                                                 &tog QWE     &none  &none  &none  &none  &none        &none
 &none   &none        &none  &none  &none  &none  &sys_reset                                                               &sys_reset   &none  &none  &none  &none  &none        &none
-&none   &tabdance    &as I  &as O  &as N  &none                              &none            &none                                    &none  &as N  &as O  &as I  &tabdance    &none
-&none   &key_repeat  &as E  &as A  &as T  &none  &bootloader  &none          &none            &none        &none          &bootloader  &none  &as T  &as A  &as E  &key_repeat  &none
+&none   &tabdance    &as I  &as O  &as N  &none  &bootloader  &none          &none            &none        &none          &bootloader  &none  &as N  &as O  &as I  &tabdance    &none
+&none   &key_repeat  &as E  &as A  &as T  &none                              &none            &none                                    &none  &as T  &as A  &as E  &key_repeat  &none
 &none   &none        &none  &none  &none         &none        &lt DESK BSPC  &lt NAV SPC      &lt NAV SPC  &lt DESK BSPC  &none        &none  &none  &none  &none  &none        &none
             >;
         };
@@ -100,8 +100,8 @@
             bindings = <
 &none  &none     &none      &none      &none      &none  &none                                     &none   &none  &none     &none      &none      &none      &none
 &none  &none     &none      &none      &none      &none  &none                                     &none   &none  &none     &none      &none      &none      &none
-&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none                  &none      &none                  &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
-&none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none   &none   &none      &none  &none   &none   &none  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none
+&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &none   &none   &none      &none  &none   &none   &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
+&none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none                  &none      &none                  &none  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none
 &none  &none     &none      &none      &none             &trans  &trans  &none      &none  &trans  &trans         &none     &none      &none      &none      &none
             >;
         };
@@ -112,8 +112,8 @@
             bindings = <
 &none  &none             &none             &none           &none                &none   &none                                &none   &none  &none             &none           &none             &none              &none
 &none  &none             &none             &none           &none                &none   &none                                &none   &none  &none             &none           &none             &none              &none
-&none  &kp LS(LG(LEFT))  &kp LS(LG(DOWN))  &kp LS(LG(UP))  &kp LS(LG(RIGHT))    &none                  &none  &none                  &none  &kp LS(LG(LEFT))  &kp LS(LG(UP))  &kp LS(LG(DOWN))  &kp LS(LG(RIGHT))  &none
-&none  &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(UP)      &kp LG(RIGHT)        &none   &none   &none  &none  &none  &none   &none   &none  &kp LG(LEFT)      &kp LG(UP)      &kp LG(DOWN)      &kp LG(RIGHT)      &none
+&none  &kp LS(LG(LEFT))  &kp LS(LG(DOWN))  &kp LS(LG(UP))  &kp LS(LG(RIGHT))    &none   &none   &none  &none  &none  &none   &none   &none  &kp LS(LG(LEFT))  &kp LS(LG(UP))  &kp LS(LG(DOWN))  &kp LS(LG(RIGHT))  &none
+&none  &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(UP)      &kp LG(RIGHT)        &none                  &none  &none                  &none  &kp LG(LEFT)      &kp LG(UP)      &kp LG(DOWN)      &kp LG(RIGHT)      &none
 &none  &none             &none             &none           &none                        &trans  &trans &none  &none  &trans  &trans         &none             &none           &none             &none              &none
             >;
         };
@@ -123,8 +123,8 @@
             bindings = <
 &none  &none                  &none                  &none                &none                  &none  &none                                     &none   &none  &none                 &none               &none                 &none                  &none
 &none  &none                  &none                  &none                &none                  &none  &none                                     &none   &none  &none                 &none               &none                 &none                  &none
-&none  &kp LS(LC(LG(LEFT)))   &kp LS(LC(LG(DOWN)))   &kp LS(LC(LG(UP)))   &kp LS(LC(LG(RIGHT)))  &none                  &none      &none                  &none  &kp LS(LC(LG(LEFT)))  &kp LS(LC(LG(UP)))  &kp LS(LC(LG(DOWN)))  &kp LS(LC(LG(RIGHT)))  &none
-&none  &kp LC(LG(LEFT))       &kp LC(LG(DOWN))       &kp LC(LG(UP))       &kp LC(LG(RIGHT))      &none  &none   &none   &none      &none  &none   &none   &none  &kp LC(LG(LEFT))      &kp LC(LG(UP))      &kp LC(LG(DOWN))      &kp LC(LG(RIGHT))      &none
+&none  &kp LS(LC(LG(LEFT)))   &kp LS(LC(LG(DOWN)))   &kp LS(LC(LG(UP)))   &kp LS(LC(LG(RIGHT)))  &none  &none   &none   &none      &none  &none   &none   &none  &kp LS(LC(LG(LEFT)))  &kp LS(LC(LG(UP)))  &kp LS(LC(LG(DOWN)))  &kp LS(LC(LG(RIGHT)))  &none
+&none  &kp LC(LG(LEFT))       &kp LC(LG(DOWN))       &kp LC(LG(UP))       &kp LC(LG(RIGHT))      &none                  &none      &none                  &none  &kp LC(LG(LEFT))      &kp LC(LG(UP))      &kp LC(LG(DOWN))      &kp LC(LG(RIGHT))      &none
 &none  &none                  &none                  &none                &none                         &trans  &trans  &none      &none  &trans  &trans         &none                 &none               &none                 &none                  &none
             >;
         };
@@ -134,8 +134,8 @@
             bindings = <
 &none  &none   &none   &none   &none   &none  &none                                     &none   &none  &none   &none   &none   &none   &none
 &none  &none   &none   &none   &none   &none  &none                                     &none   &none  &none   &none   &none   &none   &none
-&none  &as N6  &as N5  &as N4  &as N3  &none                  &none      &none                  &none  &as N3  &as N4  &as N5  &as N6  &none
-&none  &as N7  &as N2  &as N1  &as N0  &none  &none   &none   &none      &none  &none   &none   &none  &as N0  &as N1  &as N2  &as N7  &none
+&none  &as N6  &as N5  &as N4  &as N3  &none  &none   &none   &none      &none  &none   &none   &none  &as N3  &as N4  &as N5  &as N6  &none
+&none  &as N7  &as N2  &as N1  &as N0  &none                  &none      &none                  &none  &as N0  &as N1  &as N2  &as N7  &none
 &none  &none   &none   &none   &none          &as N8  &as N9  &none      &none  &as N9  &as N8         &none   &none   &none   &none   &none
             >;
         };
@@ -145,8 +145,8 @@
             bindings = <
 &none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
 &none  &none         &none         &none         &none         &none  &none                                     &none   &none  &none         &none         &none         &none         &none
-&none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none                  &none      &none                  &none  &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &bt BT_SEL 4  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
+&none  &bt BT_SEL 4  &bt BT_PRV    &bt BT_NXT    &bt BT_CLR    &none  &none   &none   &none      &none  &none   &none   &none  &bt BT_CLR    &bt BT_NXT    &bt BT_PRV    &bt BT_SEL 4  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none                  &none      &none                  &none  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
 &none  &none         &none         &none         &none                &trans  &trans  &none      &none  &trans  &trans         &none         &none         &none         &none         &none
             >;
         };

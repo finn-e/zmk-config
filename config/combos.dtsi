@@ -177,16 +177,16 @@ FCOMBO(DOT,        &kp DOT,            &kp EXCL,              &kp COLON,        
 FCOMBO(P,          &as P,              &kp PRINTSCREEN,       &kp LS(PRINTSCREEN),   &as F19,                TLM BLM TLR,        TRM BRM TRR)
 //  |x|x| |
 //  | |x| |
-FCOMBO(B,          &as B,              &kp LG(W),             &kp LG(G),             &as F22,                TLM BLM BLR,        TRM BRM BRR)
+FCOMBO(B,          &as B,              &bt BT_CLR,            &rgb_ug RGB_TOG,       &out OUT_TOG,           TLM BLM BLR,        TRM BRM BRR)
 //  | |x| |
 //  |x|x| |
-FCOMBO(X,          &as X,              &kp C_VOL_UP,          &kp C_VOL_DN,          &kp C_MUTE,             TLM BLM TLI,        TRM BRM TRI)
-//  | |x|x|
-//  | |x| |
-FCOMBO(Z,          &as Z,              &kp C_BRI_UP,          &kp C_BRI_DN,          &kp C_BKLT_TOG,         TLM BLM BLI,        TRM BRM BRI)
+FCOMBO(X,          &as X,              &kp C_VOL_UP,          &kp C_VOL_DN,          &kp C_MUTE,             TLM BLM BLI,        TRM BRM BRI)
 //  | |x| |
 //  | |x|x|
-OCOMBO(Q,          &as Q,              TLI BLI TLR,           TRI BRI TRR)
+FCOMBO(Z,          &as Z,              &kp C_BRI_UP,          &kp C_BRI_DN,          &kp C_BKLT_TOG,         TLM BLM TLI,        TRM BRM TRI)
+//  | |x|x|
+//  | |x| |
+FCOMBO(Q,          &as Q,              &kp LG(W),             &kp LG(G),             &as F22,                TLI BLI TLR,           TRI BRI TRR)
 //  |x| |x|
 //  | | |x|
 FCOMBO(J,          &as J,              &kp C_NEXT,            &kp C_PREV,            &kp C_PP,               TLI BLI BLR,        TRI BRI BRR)

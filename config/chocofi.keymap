@@ -140,9 +140,9 @@
   //                   -------------------     -------------------
             display-name = "bou";
             bindings = <
-  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &kp LC(X)      &kp LC(X)     &bt BT_SEL 3   &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
-  &tabdance       &as I         &as O         &as N          &kp LC(C)      &kp LC(C)     &as N          &as O         &as I         &tabdance
-  &key_repeat     &as E         &as A         &as T          &kp LC(V)      &kp LC(V)     &as T          &as A         &as E         &key_repeat
+  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_CLR     &kp LC(X)     &bt BT_SEL 3   &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
+  &tabdance       &as I         &as O         &as N          &bt BT_CLR_ALL &kp LC(C)     &as N          &as O         &as I         &tabdance
+  &key_repeat     &as E         &as A         &as T          &out OUT_TOG   &kp LC(V)     &as T          &as A         &as E         &key_repeat
                                 &mo NAV       &lt NAV SPC    &lt DESK BSPC  &lt DESK BSPC &lt NAV SPC    &mo NUM
             >;
         };

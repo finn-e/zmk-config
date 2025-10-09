@@ -210,29 +210,29 @@ OCOMBO(NUMLOCK,    &sticky_numlock,    TLM BLM TLI BLI,       TRM BRM TRI BRI)
 FCOMBO(RET,        &kp RET,            &kp LS(RET),           &kp LS(RET),           &kp LS(RET),            BLR BLM BLI,        BRR BRM BRI)
 //  |x|x|x|
 //  | | | |
-FCOMBO(PASTE,      &kp LC(V),          &kp LS(LC(V)),         &none,                 &none,                  TLR TLM BLI,        TRR TRM BRI)
-//  |x|x| |
-//  | | |x|
-FCOMBO(COPY,       &kp LC(C),          &kp LS(LC(C)),         &none,                 &none,                  TLR BLM TLI,        TRR BRM TRI)
-//  |x| |x|
-//  | |x| |
-FCOMBO(CUT,        &kp LC(X),          &kp LS(LC(X)),         &none,                 &none,                  BLR TLM TLI,        BRR TRM TRI)
-//  | |x|x|
-//  |x| | |
-FCOMBO(UNDO,       &kp LC(Z),          &kp LS(LC(Z)),         &none,                 &none,                  TLR BLM BLI,        TRR BRM BRI)
-//  |x| | |
-//  | |x|x|
-FCOMBO(SAVE,       &kp LC(S),          &kp LG(G),             &kp LG(W),             &kp LS(LC(S)),          BLR TLM BLI,        BRR TRM BRI)
-//  | |x| |
-//  |x| |x|
-FCOMBO(REDO,       &kp LS(LC(Z)),      &kp LC(Z),             &none,                 &none,                  BLR BLM TLI,        BRR BRM TLI)
-//  | | |x|
-//  |x|x| |
 FCOMBO(ESC,        &kp ESC,            &kp LG(L),             &kp LG(L),             &kp LG(L),              TLR TLM TLI,        TRR TRM TRI)
 //  |x|x|x|
 //  | | | |
-OCOMBO(VOLDN,      &kp C_VOL_DN,       TLR BLR BLM BLI,       TRR BRR BRM BRI)
+FCOMBO(CUT,        &kp LC(X),          &kp LS(LC(X)),         &none,                 &none,                  BLR TLM TLI,        BRR TRM TRI)
+//  | |x|x|
 //  |x| | |
+FCOMBO(COPY,       &kp LC(C),          &kp LS(LC(C)),         &none,                 &none,                  TLR BLM TLI,        TRR BRM TRI)
+//  |x| |x|
+//  | |x| |
+FCOMBO(PASTE,      &kp LC(V),          &kp LS(LC(V)),         &none,                 &none,                  TLR TLM BLI,        TRR TRM BRI)
+//  |x|x| |
+//  | | |x|
+FCOMBO(SAVE,       &kp LC(S),          &kp LG(G),             &kp LG(W),             &kp LS(LC(S)),          BLR TLM BLI,        BRR TRM BRI)
+//  | |x| |
+//  |x| |x|
+FCOMBO(BACK,       &mkp MB4,           TLR BLM BLI,           TRR BRM BRI)
+//  |x| | |
+//  | |x|x|
+FCOMBO(FORWARD,    &mkp MB5,           BLR BLM TLI,           BRR BRM TLI)
+//  | | |x|
+//  |x|x| |
+OCOMBO(VOLDN,      &kp C_VOL_DN,       TLR BLR BLM BLI,       TRR BRR BRM BRI)
+//  |x| | |a
 //  |x|x|x|
 OCOMBO(MUTE,       &kp C_MUTE,         TLM BLR BLM BLI,       TRM BRR BRM BRI)
 //  | |x| |
@@ -240,9 +240,9 @@ OCOMBO(MUTE,       &kp C_MUTE,         TLM BLR BLM BLI,       TRM BRR BRM BRI)
 OCOMBO(VOLUP,      &kp C_VOL_UP,       TLI BLR BLM BLI,       TRI BRR BRM BRI)
 //  | | |x|
 //  |x|x|x|
-OCOMBO(UNDO2,      &kp LC(Z),          TLR TLM TLI BLM BLI,   TRR TRM TRI BRM BRI)
+OCOMBO(UNDO,      &kp LC(Z),          TLR TLM TLI BLM BLI,   TRR TRM TRI BRM BRI)
 //  |x|x|x|
 //  | |x|x|
-OCOMBO(REDO2,      &kp LS(LC(Z)),      TLR TLM TLI BLR BLM,   TRR TRM TRI BRR BRM)
+OCOMBO(REDO,      &kp LS(LC(Z)),      TLR TLM TLI BLR BLM,   TRR TRM TRI BRR BRM)
 //  |x|x|x|
 //  |x|x| |

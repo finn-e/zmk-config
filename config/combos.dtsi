@@ -232,7 +232,7 @@ FCOMBO(FORWARD,    &mkp MB5,           BLR BLM TLI,           BRR BRM TLI)
 //  | | |x|
 //  |x|x| |
 OCOMBO(VOLDN,      &kp C_VOL_DN,       TLR BLR BLM BLI,       TRR BRR BRM BRI)
-//  |x| | |a
+//  |x| | |
 //  |x|x|x|
 OCOMBO(MUTE,       &kp C_MUTE,         TLM BLR BLM BLI,       TRM BRR BRM BRI)
 //  | |x| |

@@ -168,7 +168,7 @@ FCOMBO(APOS,       &kp APOS,           &kp DQT,               &kp GRAVE,        
 FCOMBO(COMMA,      &kp COMMA,          &kp QMARK,             &kp SEMI,              &kp RA(SLASH),          TLR BLR BLM,        TRR BRR BRM)
 //  |x| | |
 //  |x|x| |
-FCOMBO(DASH,       &kp MINUS,          &kp UNDER,             &kp TILDE,             &kp LS(RA(SLASH)),      TLR BLR TLM,        TRR BRR TRM)
+FCOMBO(DASH,       &kp MINUS,          &kp UNDER,             &kp TILDE,             &kp LS(RA(SLASH)),      TLR BLR TLI,        TRR BRR TRI)
 //  |x| |x|
 //  |x| | |
 FCOMBO(DOT,        &kp DOT,            &kp EXCL,              &kp COLON,             &kp RA(N8),             TLR BLR BLI,        TRR BRR BRI)
@@ -240,9 +240,9 @@ OCOMBO(MUTE,       &kp C_MUTE,         TLM BLR BLM BLI,       TRM BRR BRM BRI)
 OCOMBO(VOLUP,      &kp C_VOL_UP,       TLI BLR BLM BLI,       TRI BRR BRM BRI)
 //  | | |x|
 //  |x|x|x|
-OCOMBO(UNDO,      &kp LC(Z),          TLR TLM TLI BLM BLI,   TRR TRM TRI BRM BRI)
+OCOMBO(UNDO,       &kp LC(Z),          TLR TLM TLI BLM BLI,   TRR TRM TRI BRM BRI)
 //  |x|x|x|
 //  | |x|x|
-OCOMBO(REDO,      &kp LS(LC(Z)),      TLR TLM TLI BLR BLM,   TRR TRM TRI BRR BRM)
+OCOMBO(REDO,       &kp LS(LC(Z)),      TLR TLM TLI BLR BLM,   TRR TRM TRI BRR BRM)
 //  |x|x|x|
 //  |x|x| |

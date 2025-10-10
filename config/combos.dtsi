@@ -68,28 +68,28 @@ TCOMBO(##NAME, ##OUTER_BINDINGS, ##INNER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPO
 
 //** COMBOS **//
 // 3 column diagrams do not include pinky (most combos)
-LTCOMBO(TP, &kp LEFT, &as N8, &as F8, TLP)
-RTCOMBO(TP, &kp RIGHT, &as N8, &as F8, TRP)
+LTCOMBO(TP, &kp LEFT, &as N7, &as F8, TLP)
+RTCOMBO(TP, &kp RIGHT, &as N7, &as F8, TRP)
 //| | | | |
 //|x| | | |
-TCOMBO(E, &kp DOWN, &as N6, &as F6, TLR, TRR)
+TCOMBO(E, &kp DOWN, &as N2, &as F6, TLR, TRR)
 //| | | | |
 //| |x| | |
-TCOMBO(A, &kp UP, &as N4, &as F4, TLM, TRM)
+TCOMBO(A, &kp UP, &as N1, &as F4, TLM, TRM)
 //| | | | |
 //| | |x| |
-LTCOMBO(T, &kp RIGHT, &as N2, &as F2, TLI)
-RTCOMBO(T, &kp LEFT, &as N2, &as F2, TRI)
+LTCOMBO(T, &kp RIGHT, &as N0, &as F2, TLI)
+RTCOMBO(T, &kp LEFT, &as N0, &as F2, TRI)
 //| | | | |
 //| | | |x|
-LTCOMBO(TAB, &kp END, &as N9, &as F9, BLP)
-RTCOMBO(TAB, &kp HOME, &as N9, &as F9, BRP)
+LTCOMBO(TAB, &kp END, &as N6, &as F9, BLP)
+RTCOMBO(TAB, &kp HOME, &as N6, &as F9, BRP)
 //|x| | | |
 //| | | | |
-TCOMBO(I, &kp PG_DN, &as N7, &as F7, BLR, BRR)
+TCOMBO(I, &kp PG_DN, &as N5, &as F7, BLR, BRR)
 //| |x| | |
 //| | | | |
-TCOMBO(O, &kp PG_UP, &as N5, &as F5, BLM, BRM)
+TCOMBO(O, &kp PG_UP, &as N4, &as F5, BLM, BRM)
 //| | |x| |
 //| | | | |
 LTCOMBO(N, &kp HOME, &as N3, &as F3, BLI)
@@ -132,7 +132,7 @@ FCOMBO(H,          &as H,              &kp AMPS,              &kp PIPE,         
 FCOMBO(S,          &as S,              &kp EQUAL,             &kp PLUS,              &as F9,                 BLR BLI,            BRR BRI)
 //  | | | |
 //  |x| |x|
-FCOMBO(R,          &as R,              &kp ASTERISK,          &as N0,                &as F10,                BLM BLI,            BRM BRI)
+FCOMBO(R,          &as R,              &kp ASTERISK,          &as N1,                &as F10,                BLM BLI,            BRM BRI)
 //  | | | |
 //  | |x|x|
 FCOMBO(U,          &as U,              &kp AT,                &kp AT,                &as F15,                TLR TLM,            TRR TRM)
@@ -141,7 +141,7 @@ FCOMBO(U,          &as U,              &kp AT,                &kp AT,           
 FCOMBO(C,          &as C,              &caps_word,            &kp CAPS,              &as F14,                TLR TLI,            TRR TRI)
 //  |x| |x|
 //  | | | |
-FCOMBO(L,          &as L,              &kp CARET,             &kp N1,                &as F12,                TLM TLI,            TRM TRI)
+FCOMBO(L,          &as L,              &kp CARET,             &kp N0,                &as F12,                TLM TLI,            TRM TRI)
 //  | |x|x|
 //  | | | |
 FCOMBO(G,          &as G,              &kp DOLLAR,            &kp RA(N5),            &as F18,                BLR TLM,            BRR TRM)

@@ -85,8 +85,8 @@ RTCOMBO(T, &as LEFT, &as N0, &as F2, BRI)
 //| | | | |
 //| | | |x|
 OCOMBO(TAB, &tabdance, TLP, TRP) 
-LTCOMBO(TAB, &as END, &as N6, &as F9, TLP)
-RTCOMBO(TAB, &as HOME, &as N6, &as F9, TRP)
+LTCOMBO(TAB, &as HOME, &as N6, &as F9, TLP)
+RTCOMBO(TAB, &as END, &as N6, &as F9, TRP)
 //|x| | | |
 //| | | | |
 FCOMBO(I, &as I, &as PG_DN, &as N5, &as F7, TLR, TRR)
@@ -96,10 +96,11 @@ FCOMBO(O, &as O, &as PG_UP, &as N4, &as F5, TLM, TRM)
 //| | |x| |
 //| | | | |
 OCOMBO(N, &as N, TLI, TRI)
+LTCOMBO(N, &as END, &as N3, &as F3, TLI)
+RTCOMBO(N, &as HOME, &as N3, &as F3, TRI)
+// Thumbs
 OCOMBO(SPACE, &kp SPACE, LIT, RIT) 
 OCOMBO(BACKSPACE, &kp BACKSPACE, LOT, ROT) 
-LTCOMBO(N, &as HOME, &as N3, &as F3, TLI)
-RTCOMBO(N, &as END, &as N3, &as F3, TRI)
 //| | | |x|
 //| | | | |
 FCOMBO(RALT,       &sk_ralt_lock,      &as GT,                &as LT,                &bt BT_SEL 0,           TLP BLP,            TRP BRP)
@@ -141,13 +142,13 @@ FCOMBO(S,          &as S,              &as EQUAL,             &as PLUS,         
 FCOMBO(R,          &as R,              &as ASTERISK,          &as N8,                &as F10,                BLM BLI,            BRM BRI)
 //  | | | |
 //  | |x|x|
-FCOMBO(U,          &as U,              &as AT,                &as AT,                &as F15,                TLR TLM,            TRR TRM)
+FCOMBO(U,          &as U,              &as AT,                &as CARET,             &as F15,                TLR TLM,            TRR TRM)
 //  |x|x| |
 //  | | | |
 FCOMBO(C,          &as C,              &caps_word,            &as CAPS,              &as F14,                TLR TLI,            TRR TRI)
 //  |x| |x|
 //  | | | |
-FCOMBO(L,          &as L,              &as CARET,             &as N9,                &as F12,                TLM TLI,            TRM TRI)
+FCOMBO(L,          &as L,              &as DELETE,            &as N9,                &as F12,                TLM TLI,            TRM TRI)
 //  | |x|x|
 //  | | | |
 FCOMBO(G,          &as G,              &as DOLLAR,            &as RA(N5),            &as F18,                BLR TLM,            BRR TRM)

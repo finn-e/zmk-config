@@ -225,10 +225,10 @@ FCOMBO(PASTE,      &kp LC(V),          &kp LS(LC(V)),         &none,            
 FCOMBO(SAVE,       &kp LC(S),          &kp LG(G),             &kp LG(W),             &kp LS(LC(S)),          BLR TLM BLI,        BRR TRM BRI)
 //  | |x| |
 //  |x| |x|
-FCOMBO(BACK,       &mkp MB4,           TLR BLM BLI,           TRR BRM BRI)
+OCOMBO(BACK,       &mkp MB4,           TLR BLM BLI,           TRR BRM BRI)
 //  |x| | |
 //  | |x|x|
-FCOMBO(FORWARD,    &mkp MB5,           BLR BLM TLI,           BRR BRM TLI)
+OCOMBO(FORWARD,    &mkp MB5,           BLR BLM TLI,           BRR BRM TLI)
 //  | | |x|
 //  |x|x| |
 OCOMBO(VOLDN,      &kp C_VOL_DN,       TLR BLR BLM BLI,       TRR BRR BRM BRI)

@@ -9,13 +9,13 @@ combo_l_##NAME { \
 #define LTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
 combo_li_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <OUTER_BINDINGS>; \
+	bindings = <INNER_BINDINGS>; \
 	key-positions = <KEYPOS LIT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
 combo_lo_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <INNER_BINDINGS>; \
+	bindings = <OUTER_BINDINGS>; \
 	key-positions = <KEYPOS LOT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
@@ -37,13 +37,13 @@ combo_r_##NAME { \
 #define RTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
 combo_ri_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <OUTER_BINDINGS>; \
+	bindings = <INNER_BINDINGS>; \
 	key-positions = <KEYPOS RIT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
 combo_ro_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <INNER_BINDINGS>; \
+	bindings = <OUTER_BINDINGS>; \
 	key-positions = <KEYPOS ROT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
@@ -96,6 +96,8 @@ FCOMBO(O, &as O, &as PG_UP, &as N4, &as F5, TLM, TRM)
 //| | |x| |
 //| | | | |
 OCOMBO(N, &as N, TLI, TRI)
+OCOMBO(SPACE, &kp SPACE, LIT, RIT) 
+OCOMBO(BACKSPACE, &kp BACKSPACE, LOT, ROT) 
 LTCOMBO(N, &as HOME, &as N3, &as F3, TLI)
 RTCOMBO(N, &as END, &as N3, &as F3, TRI)
 //| | | |x|

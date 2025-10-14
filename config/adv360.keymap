@@ -8,25 +8,25 @@
 
 // BOUGIE KEYS
 // LEFT SIDE
-#define TLP 29
-#define TLR 30
-#define TLM 31
-#define TLI 32
-#define BLP 47
-#define BLR 48
-#define BLM 49
-#define BLI 50
+#define TLP 47
+#define TLR 48
+#define TLM 49
+#define TLI 50
+#define BLP 61
+#define BLR 62
+#define BLM 63
+#define BLI 64
 #define LIT 65
 #define LOT 66
 // RIGHT SIDE
-#define TRP 44
-#define TRR 43
-#define TRM 42
-#define TRI 41
-#define BRP 58
-#define BRR 57
-#define BRM 56
-#define BRI 55
+#define TRP 58
+#define TRR 57
+#define TRM 56
+#define TRI 55
+#define BRP 74
+#define BRR 73
+#define BRM 72
+#define BRI 71
 #define ROT 69
 #define RIT 70
 // LAYERS
@@ -78,11 +78,11 @@
         bougie {
             display-name = "bou";
             bindings = <
-&none      &none        &none        &none        &none        &none           &tog QWE                                                                 &tog QWE     &none  &none        &none        &none        &none        &none
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &sys_reset                                                               &sys_reset   &none  &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &none
-&none      &tabdance    &as I        &as O        &as N        &rgb_ug RGB_TOG &bootloader    &none          &none            &none  &none              &bootloader  &none  &as N        &as O        &as I        &tabdance    &none
-&none      &key_repeat  &as E        &as A        &as T        &out OUT_TOG                   &none            &none                                  &none  &as T        &as A        &as E        &key_repeat  &none
-&none      &none        &none        &none        &none                        &lt NAV SPC    &lt DESK BSPC  &none            &none  &lt DESK BSPC      &lt NAV SPC  &none  &none        &none        &none        &none        &none
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &tog QWE                                                                 &tog QWE     &none           &none        &none        &none        &none        &none
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &sys_reset                                                               &sys_reset   &bt BT_CLR      &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR
+&none      &none        &none        &none        &none        &rgb_ug RGB_TOG &bootloader    &none          &none            &none  &none              &bootloader  &rgb_ug RGB_TOG &none        &none        &none        &none        &none
+&none      &none        &none        &none        &none        &out OUT_TOG                                  &none            &none                                  &out OUT_TOG    &none        &none        &none        &none        &none
+&none      &none        &none        &none        &none                        &lt NAV SPC    &lt DESK BSPC  &none            &none  &lt DESK BSPC      &lt NAV SPC  &none           &none        &none        &none        &none        &none
             >;
         };
 
@@ -102,9 +102,9 @@
             bindings = <
 &none  &none     &none      &none      &none      &none  &none                                     &none   &none  &none     &none      &none      &none      &none
 &none  &none     &none      &none      &none      &none  &none                                     &none   &none  &none     &none      &none      &none      &none
-&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &none   &none   &none      &none  &none   &none   &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
-&none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none                  &none      &none                  &none  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none
-&none  &none     &none      &none      &none             &trans  &trans  &none      &none  &trans  &trans         &none     &none      &none      &none      &none
+&none  &none     &none      &none      &none      &none  &none   &none   &none      &none  &none   &none   &none  &none     &none      &none      &none      &none
+&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none                  &none      &none                  &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
+&none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT         &trans  &trans  &none      &none  &trans  &trans         &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none
             >;
         };
 

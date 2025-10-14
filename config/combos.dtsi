@@ -6,16 +6,16 @@ combo_l_##NAME { \
 	layers = <COMBO_LAYERS>; \
 }; \
 
-#define LTCOMBO(NAME, OUTER_BINDINGS, INNER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
+#define LTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
 combo_li_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <INNER_BINDINGS>; \
+	bindings = <OUTER_BINDINGS>; \
 	key-positions = <KEYPOS LIT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
 combo_lo_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <OUTER_BINDINGS>; \
+	bindings = <INNER_BINDINGS>; \
 	key-positions = <KEYPOS LOT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
@@ -34,16 +34,16 @@ combo_r_##NAME { \
 	layers = <COMBO_LAYERS>; \
 }; \
 
-#define RTCOMBO(NAME, OUTER_BINDINGS, INNER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
+#define RTCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, KEYPOS) \
 combo_ri_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <INNER_BINDINGS>; \
+	bindings = <OUTER_BINDINGS>; \
 	key-positions = <KEYPOS RIT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
 combo_ro_##NAME { \
 	timeout-ms = <COMBO_TIMEOUT>; \
-	bindings = <OUTER_BINDINGS>; \
+	bindings = <INNER_BINDINGS>; \
 	key-positions = <KEYPOS ROT>; \
 	layers = <COMBO_LAYERS>; \
 }; \
@@ -54,44 +54,48 @@ combo_rb_##NAME { \
 	layers = <COMBO_LAYERS>; \
 };
 
-#define TCOMBO(NAME, OUTER_BINDINGS, INNER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
-LTCOMBO(##NAME, ##OUTER_BINDINGS, ##INNER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS) \
-RTCOMBO(##NAME, ##OUTER_BINDINGS, ##INNER_BINDINGS, ##BOTH_BINDINGS, ##RIGHT_KEYPOS)
+#define TCOMBO(NAME, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
+LTCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS) \
+RTCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##RIGHT_KEYPOS)
 
 #define OCOMBO(NAME, BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
 LOCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS) \
 ROCOMBO(##NAME, ##BINDINGS, ##RIGHT_KEYPOS)
 
-#define FCOMBO(NAME, BINDINGS, OUTER_BINDINGS, INNER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
+#define FCOMBO(NAME, BINDINGS, INNER_BINDINGS, OUTER_BINDINGS, BOTH_BINDINGS, LEFT_KEYPOS, RIGHT_KEYPOS) \
 OCOMBO(##NAME, ##BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS) \
-TCOMBO(##NAME, ##OUTER_BINDINGS, ##INNER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS)
+TCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPOS, ##RIGHT_KEYPOS)
 
 //** COMBOS **//
 // 3 column diagrams do not include pinky (most combos)
+OCOMBO(TP, &tabdance, TLP, TRP)
 LTCOMBO(TP, &kp LEFT, &as N7, &as F8, TLP)
 RTCOMBO(TP, &kp RIGHT, &as N7, &as F8, TRP)
 //| | | | |
 //|x| | | |
-TCOMBO(E, &kp DOWN, &as N2, &as F6, TLR, TRR)
+FCOMBO(E, &kp E, &kp DOWN, &as N2, &as F6, TLR, TRR)
 //| | | | |
 //| |x| | |
-TCOMBO(A, &kp UP, &as N1, &as F4, TLM, TRM)
+FCOMBO(A, &kp A, &kp UP, &as N1, &as F4, TLM, TRM)
 //| | | | |
 //| | |x| |
+OCOMBO(T, &kp T, TLI, TRI)
 LTCOMBO(T, &kp RIGHT, &as N0, &as F2, TLI)
 RTCOMBO(T, &kp LEFT, &as N0, &as F2, TRI)
 //| | | | |
 //| | | |x|
+OCOMBO(TAB, &tabdance, BLP, BRP) 
 LTCOMBO(TAB, &kp END, &as N6, &as F9, BLP)
 RTCOMBO(TAB, &kp HOME, &as N6, &as F9, BRP)
 //|x| | | |
 //| | | | |
-TCOMBO(I, &kp PG_DN, &as N5, &as F7, BLR, BRR)
+FCOMBO(I, &kp I, &kp PG_DN, &as N5, &as F7, BLR, BRR)
 //| |x| | |
 //| | | | |
-TCOMBO(O, &kp PG_UP, &as N4, &as F5, BLM, BRM)
+FCOMBO(O, &kp O, &kp PG_UP, &as N4, &as F5, BLM, BRM)
 //| | |x| |
 //| | | | |
+OCOMBO(N, &kp N, BLI, BRI)
 LTCOMBO(N, &kp HOME, &as N3, &as F3, BLI)
 RTCOMBO(N, &kp END, &as N3, &as F3, BRI)
 //| | | |x|

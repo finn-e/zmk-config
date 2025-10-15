@@ -22,3 +22,7 @@ shield: [ "chocofi_left", "chocofi_right" ] #, "settings_reset" ]
 include:
   - board: adv360_left
   - board: adv360_right
+  - board: nice_nano_v2
+    shield: swweeep_left nice_view_adapter nice_view
+  - board: nice_nano_v2
+    shield: swweeep_right nice_view_adapter nice_view

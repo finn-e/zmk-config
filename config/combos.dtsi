@@ -184,7 +184,7 @@ FCOMBO(DOT,        &as DOT,            &as EXCL,              &as COLON,        
 FCOMBO(P,          &as P,              &as PRINTSCREEN,       &as LS(PRINTSCREEN),   &as F19,                TLM BLM TLR,        TRM BRM TRR)
 //  |x|x| |
 //  | |x| |
-FCOMBO(B,          &as B,              &bt BT_CLR,            &rgb_ug RGB_TOG,       &out OUT_TOG,           TLM BLM BLR,        TRM BRM BRR)
+FCOMBO(B,          &as B,              &bt BT_CLR,            &out OUT_TOG,          &out OUT_TOG,           TLM BLM BLR,        TRM BRM BRR)
 //  | |x| |
 //  |x|x| |
 FCOMBO(X,          &as X,              &as C_VOL_UP,          &as C_VOL_DN,          &as C_MUTE,             TLM BLM BLI,        TRM BRM BRI)

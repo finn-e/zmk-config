@@ -8,6 +8,8 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: finn-e
       url-base: https://github.com/finn-e
+    - name: sadek
+      url-base: https://github.com/sadekbaroudi
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -16,6 +18,10 @@ manifest:
     - name: zmk-keyboard-chocofi
       remote: finn-e
       revision: trunk
+    - name: zmk-fingerpunch-keyboards
+      remote: sadek
+      revision: main
+      import: config/deps.yml
     - name: Typing-Keyboard2
       remote: finn-e
       revision: modulize

@@ -99,8 +99,8 @@ OCOMBO(N, &as N, TLI, TRI)
 LTCOMBO(N, &as END, &as N3, &as F3, TLI)
 RTCOMBO(N, &as HOME, &as N3, &as F3, TRI)
 // Thumbs
-OCOMBO(SPACE, &kp SPACE, LIT, RIT) 
-OCOMBO(BACKSPACE, &kp BACKSPACE, LOT, ROT) 
+OCOMBO(SPACE, &lt NAV SPC, LIT, RIT) 
+OCOMBO(BACKSPACE, &lt DESK BSPC, LOT, ROT) 
 //| | | |x|
 //| | | | |
 FCOMBO(RALT,       &sk_ralt_lock,      &as GT,                &as LT,                &bt BT_SEL 0,           TLP BLP,            TRP BRP)

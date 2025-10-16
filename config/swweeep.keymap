@@ -56,7 +56,7 @@
 #define RIT 34
 
 // LAYERS
-#define DEF  0
+#define BOU  0
 #define QWE  1
 #define NAV  2
 #define WIN  3
@@ -66,7 +66,7 @@
 
 // CONFIG
 #define COMBO_TIMEOUT 70
-#define COMBO_LAYERS DEF NAV DESK WIN NUM BT
+#define COMBO_LAYERS BOU NAV WIN DESK NUM BT
 #define STICKY_TIMEOUT 1000
 #define QUICK_TAP_TIMEOUT 125
 #define HOLD_TAP_TIMEOUT 195
@@ -138,11 +138,11 @@
   //                   | NAV | NAV |DESK |     |DESK | NAV | NUM |
   //                   -------------------     -------------------
             display-name = "bougie";
-            bindings = <
-  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR            &bt BT_CLR   &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
-  &none        &none        &none        &none        &bootloader           &bootloader  &none        &none        &none        &none
-  &none        &none        &none        &none        &sys_reset            &sys_reset   &none        &none        &none        &none
-                            &mo NAV      &lt NAV SPC  &lt DESK BSPC         &lt DESK BSPC &lt NAV SPC    &mo NUM
+            bindings = < 
+  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_CLR            &bt BT_CLR  &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
+  &tabdance    &as I        &as O        &as N         &bootloader           &bootloader &as N         &as O        &as I        &tabdance
+  &key_repeat  &as E        &as A        &as T         &sys_reset            &sys_reset  &as T         &as A        &as E        &key_repeat
+                            &mo NAV      &lt DESK BSPC &lt NAV SPC           &lt NAV SPC &lt DESK BSPC &mo NUM
             >;
         };
 
@@ -169,7 +169,7 @@
             >;
         };
 
-        nav {
+        navigation {
   // |------------------------------                 -------------------------------
   // |     |     |     |     |     |                 |     |     |     |     |     |
   // |     |     |     |     |     |                 |     |     |     |     |     |
@@ -183,7 +183,7 @@
   //                   |     |BSPC | SPC |     | SPC |BSPC |     |
   //                   |     | WIN | NAV |     | NAV | WIN |     |
   //                   -------------------     -------------------
-            display-name = "nav";
+            display-name = "navi";
             bindings = <
   &none     &none     &none      &none      &trans    &trans  &none     &none      &none      &none
   &kp HOME  &kp PG_DN &kp PG_UP  &kp END    &trans    &trans  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
@@ -193,7 +193,7 @@
         };
         windows {
             // Arrows from Nav but with Gui/Shift-Gui - move windows around the screen
-            display-name = "win";
+            display-name = "windws";
             bindings = <
   &none             &none             &none           &none              &trans    &trans  &none             &none           &none             &none
   &kp LS(LG(LEFT))  &kp LS(LG(DOWN))  &kp LS(LG(UP))  &kp LS(LG(RIGHT))  &trans    &trans  &kp LS(LG(LEFT))  &kp LS(LG(UP))  &kp LS(LG(DOWN))  &kp LS(LG(RIGHT))
@@ -204,7 +204,7 @@
 
         desktops {
             // Arrows from Nav but with Ctrl-Gui/Shift-Ctrl-Gui - move around and move windows around the desktops      
-            display-name = "desk";
+            display-name = "desktps";
             bindings = <
   &none                &none                 &none                &none                  &trans    &trans  &none                  &none                &none                 &none
   &kp LS(LC(LG(LEFT))) &kp LS(LC(LG(DOWN)))  &kp LS(LC(LG(UP)))   &kp LS(LC(LG(RIGHT)))  &trans    &trans  &kp LS(LC(LG(LEFT)))   &kp LS(LC(LG(UP)))   &kp LS(LC(LG(DOWN)))  &kp LS(LC(LG(RIGHT)))
@@ -250,7 +250,7 @@
   //                   |     |     |     |     |     |     |     |
   //                   |     |     |     |     |     |     |     |
   //                   -------------------     -------------------
-            display-name = "bt";
+            display-name = "bteeth";
             bindings = <
   &none           &none         &none         &none         &none                   &none   &none         &none         &none         &none
   &bt BT_CLR      &bt BT_PRV    &bt BT_NXT    &bt BT_SEL 4  &none                   &none   &bt BT_SEL 4  &bt BT_NXT    &bt BT_PRV    &bt BT_CLR

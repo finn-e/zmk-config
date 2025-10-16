@@ -139,10 +139,10 @@
   //                   -------------------     -------------------
             display-name = "bougie";
             bindings = < 
-  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &bt BT_CLR            &bt BT_CLR  &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
-  &tabdance    &as I        &as O        &as N         &bootloader           &bootloader &as N         &as O        &as I        &tabdance
-  &key_repeat  &as E        &as A        &as T         &sys_reset            &sys_reset  &as T         &as A        &as E        &key_repeat
-                            &mo NAV      &lt DESK BSPC &lt NAV SPC           &lt NAV SPC &lt DESK BSPC &mo NUM
+  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR            &bt BT_CLR    &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
+  &tabdance    &as I        &as O        &as N        &bootloader           &bootloader   &as N        &as O        &as I        &tabdance
+  &key_repeat  &as E        &as A        &as T        &sys_reset            &sys_reset    &as T        &as A        &as E        &key_repeat
+                            &mo NAV      &lt NAV SPC  &lt DESK BSPC         &lt DESK BSPC &lt NAV SPC  &mo NUM
             >;
         };
 

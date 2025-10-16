@@ -185,20 +185,20 @@
   //                   -------------------     -------------------
             display-name = "navi";
             bindings = <
-  &none     &none     &none      &none      &trans    &trans  &none     &none      &none      &none
-  &kp HOME  &kp PG_DN &kp PG_UP  &kp END    &trans    &trans  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
-  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans    &trans  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
-                      &none      &trans     &trans    &trans  &trans    &none
+  &none     &none     &none      &none      &none    &none  &none     &none      &none      &none
+  &kp HOME  &kp PG_DN &kp PG_UP  &kp END    &none    &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END
+  &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &none    &none  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT
+                      &none      &trans     &trans   &trans &trans    &none
             >;
         };
         windows {
             // Arrows from Nav but with Gui/Shift-Gui - move windows around the screen
             display-name = "windws";
             bindings = <
-  &none             &none             &none           &none              &trans    &trans  &none             &none           &none             &none
-  &kp LS(LG(LEFT))  &kp LS(LG(DOWN))  &kp LS(LG(UP))  &kp LS(LG(RIGHT))  &trans    &trans  &kp LS(LG(LEFT))  &kp LS(LG(UP))  &kp LS(LG(DOWN))  &kp LS(LG(RIGHT))
-  &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(UP)      &kp LG(RIGHT)      &trans    &trans  &kp LG(LEFT)      &kp LG(UP)      &kp LG(DOWN)      &kp LG(RIGHT)
-                                      &none           &trans             &trans    &trans  &trans            &none
+  &none             &none             &none           &none              &none    &none  &none             &none           &none             &none
+  &kp LS(LG(LEFT))  &kp LS(LG(DOWN))  &kp LS(LG(UP))  &kp LS(LG(RIGHT))  &none    &none  &kp LS(LG(LEFT))  &kp LS(LG(UP))  &kp LS(LG(DOWN))  &kp LS(LG(RIGHT))
+  &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(UP)      &kp LG(RIGHT)      &none    &none  &kp LG(LEFT)      &kp LG(UP)      &kp LG(DOWN)      &kp LG(RIGHT)
+                                      &none           &trans             &trans   &trans &trans            &none
             >;
         };
 
@@ -206,10 +206,10 @@
             // Arrows from Nav but with Ctrl-Gui/Shift-Ctrl-Gui - move around and move windows around the desktops      
             display-name = "desktps";
             bindings = <
-  &none                &none                 &none                &none                  &trans    &trans  &none                  &none                &none                 &none
-  &kp LS(LC(LG(LEFT))) &kp LS(LC(LG(DOWN)))  &kp LS(LC(LG(UP)))   &kp LS(LC(LG(RIGHT)))  &trans    &trans  &kp LS(LC(LG(LEFT)))   &kp LS(LC(LG(UP)))   &kp LS(LC(LG(DOWN)))  &kp LS(LC(LG(RIGHT)))
-  &kp LC(LG(LEFT))     &kp LC(LG(DOWN))      &kp LC(LG(UP))       &kp LC(LG(RIGHT))      &trans    &trans  &kp LC(LG(LEFT))       &kp LC(LG(UP))       &kp LC(LG(DOWN))      &kp LC(LG(RIGHT))
-                                             &none                &trans                 &trans    &trans  &trans                 &none
+  &none                &none                 &none                &none                  &none    &none  &none                  &none                &none                 &none
+  &kp LS(LC(LG(LEFT))) &kp LS(LC(LG(DOWN)))  &kp LS(LC(LG(UP)))   &kp LS(LC(LG(RIGHT)))  &none    &none  &kp LS(LC(LG(LEFT)))   &kp LS(LC(LG(UP)))   &kp LS(LC(LG(DOWN)))  &kp LS(LC(LG(RIGHT)))
+  &kp LC(LG(LEFT))     &kp LC(LG(DOWN))      &kp LC(LG(UP))       &kp LC(LG(RIGHT))      &none    &none  &kp LC(LG(LEFT))       &kp LC(LG(UP))       &kp LC(LG(DOWN))      &kp LC(LG(RIGHT))
+                                             &none                &trans                 &trans   &trans &trans                 &none
             >;
         };
 

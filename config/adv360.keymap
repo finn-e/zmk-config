@@ -81,7 +81,7 @@
 &bt BT_CLR &bt BT_SEL 0       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &tog QWE                                                                 &tog QWE     &none           &none        &none        &none        &none              &none
 &bt BT_CLR &bt BT_SEL 0       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &sys_reset                                                               &sys_reset   &bt BT_CLR      &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0       &bt BT_CLR
 &none      &none              &none        &none        &none        &rgb_ug RGB_TOG &bootloader    &none          &none            &none  &none              &bootloader  &rgb_ug RGB_TOG &none        &none        &none        &none              &none
-&none      &ctab              &as o        &as n        &out OUT_TOG                                  &none            &none                                  &out OUT_TOG    &as n        &as o        &as i        &ctab        &none
+&none      &ctab              &as i        &as o        &as n        &out OUT_TOG                                  &none            &none                                  &out OUT_TOG    &as n        &as o        &as i        &ctab        &none
 &none      &sk_lshift_lock    &as e        &as a        &as t                        &lt NAV SPC    &lt DESK BSPC  &none            &none  &lt DESK BSPC      &lt NAV SPC                  &as t        &as a        &as e        &sk_lshift_lock    &none
             >;
         };

@@ -104,9 +104,11 @@
 
         ctab: ctab {
             compatible = "zmk,behavior-hold-tap";
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <HOLD_TAP_TIMEOUT>;
-            #binding-cells = <2>;
+            retro-tap;
             bindings = <&kp>, <&tabdance>;
+            
+            #binding-cells = <2>;
             display-name = "Control-Tabdance";
         };

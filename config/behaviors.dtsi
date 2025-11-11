@@ -106,7 +106,7 @@
             compatible = "zmk,behavior-hold-tap";
             flavor = "tap-preferred";
             tapping-term-ms = <HOLD_TAP_TIMEOUT>;
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            #binding-cells = <1>;
+            bindings = <&kp>, <&tabdance>;
             display-name = "Control-Tabdance";
         };

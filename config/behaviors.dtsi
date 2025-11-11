@@ -107,6 +107,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <HOLD_TAP_TIMEOUT>;
             #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&tabdance>;
+            bindings = <&tabdance>, <&kp LCTRL>;
             display-name = "Control-Tabdance";
         };

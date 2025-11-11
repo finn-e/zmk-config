@@ -81,7 +81,7 @@
 &none      &sk_lalt_lock      &as l        &as i        &as c        &none           &sys_reset                                                               &sys_reset   &none           &as c        &as i        &as l        &sk_lalt_lock      &none
 &none      &sk_lctrl_lock     &as r        &as o        &as d        &rgb_ug RGB_TOG &bootloader    &none          &none            &none  &none              &bootloader  &rgb_ug RGB_TOG &as d        &as o        &as r        &sk_lctrl_lock     &none
 &none      &sk_lshift_lock    &as n        &as e        &as t        &out OUT_TOG                                  &none            &none                                  &out OUT_TOG    &as t        &as e        &as n        &sk_lshift_lock    &none
-&none      &sk_lgui_lock      &as h        &as a        &as s                        &lt NAV SPC    &lt DESK BSPC  &none            &none  &lt DESK BSPC      &lt NAV SPC                  &as s        &as a        &as h        &sk_lgui_lock      &none
+&none      &sk_lmeta_lock     &as h        &as a        &as s                        &lt NAV SPC    &lt DESK BSPC  &none            &none  &lt DESK BSPC      &lt NAV SPC                  &as s        &as a        &as h        &sk_lmeta_lock     &none
             >;
         };
 

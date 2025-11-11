@@ -31,26 +31,26 @@
         sticky_lalt: sticky_lalt {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT>, <&kt LEFT_ALT>;
+            bindings = <&sk LALT>, <&kt LALT>;
         };
 
         sticky_ralt: sticky_ralt {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&sk RIGHT_ALT>, <&kt RIGHT_ALT>;
+            bindings = <&sk RALT>, <&kt RALT>;
         };
 
         sk_ralt_lock: sk_ralt_lock {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&sticky_ralt>, <&kt RIGHT_ALT>;
+            bindings = <&sticky_ralt>, <&kt RALT>;
 
             mods = <(MOD_RALT)>;
         };
 
         sk_lalt_lock: sk_lalt_lock {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&sticky_lalt>, <&kt LEFT_ALT>;
+            bindings = <&sticky_lalt>, <&kt LALT>;
 
             #binding-cells = <0>;
             mods = <(MOD_LALT)>;

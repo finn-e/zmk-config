@@ -81,7 +81,7 @@
 &bt BT_CLR &bt BT_SEL 0       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &tog QWE                                                                 &tog QWE     &none           &none        &none        &none        &none              &none
 &bt BT_CLR &bt BT_SEL 0       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &sys_reset                                                               &sys_reset   &bt BT_CLR      &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0       &bt BT_CLR
 &none      &none              &none        &none        &none        &rgb_ug RGB_TOG &bootloader    &none          &none            &none  &none              &bootloader  &rgb_ug RGB_TOG &none        &none        &none        &none              &none
-&none      &mt LCTL &tabdance &as i        &as o        &as n        &out OUT_TOG                                  &none            &none                                  &out OUT_TOG    &as n        &as o        &as i        &mt LCTL &tabdance &none
+&none      &ctab              &as o        &as n        &out OUT_TOG                                  &none            &none                                  &out OUT_TOG    &as n        &as o        &as i        &ctab        &none
 &none      &sk_lshift_lock    &as e        &as a        &as t                        &lt NAV SPC    &lt DESK BSPC  &none            &none  &lt DESK BSPC      &lt NAV SPC                  &as t        &as a        &as e        &sk_lshift_lock    &none
             >;
         };
@@ -92,8 +92,8 @@
 &kp EQUAL         &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &trans     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB           &kp Q      &kp W     &kp E     &kp R      &kp T   &trans                                                   &trans     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &mt LCTRL ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT         &none      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&none             &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &none
+&kp LSHFT         &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&tog QWE          &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &tog QWE
             >;
         };
 

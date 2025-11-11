@@ -99,7 +99,7 @@
         tabdance: tabdance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            bindings = <&kp TAB>, <&tog QWE>, <&none>, <&sys_reset>, <&none>, <&bootloader>;
+            bindings = <&kp TAB>, <&none>, <&none>, <&sys_reset>, <&none>, <&bootloader>;
         };
 
         ctab: ctab {
@@ -108,7 +108,7 @@
             tapping-term-ms = <HOLD_TAP_TIMEOUT>;
             retro-tap;
             bindings = <&kp>, <&tabdance>;
-            
+
             #binding-cells = <2>;
             display-name = "Control-Tabdance";
         };

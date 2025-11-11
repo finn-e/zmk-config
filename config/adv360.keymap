@@ -31,12 +31,11 @@
 #define RIT 70
 // LAYERS
 #define DEF  0
-#define QWE  1
-#define NAV  2
-#define DESK  3
-#define WIN  4
-#define NUM  5
-#define BT   6
+#define NAV  1
+#define DESK  2
+#define WIN  3
+#define NUM  4
+#define BT   5
 // CONFIG
 #define COMBO_TIMEOUT 70
 #define COMBO_LAYERS DEF NAV DESK WIN NUM BT
@@ -75,25 +74,14 @@
     keymap {
         compatible = "zmk,keymap";
 
-        bougie {
-            display-name = "bou";
+        lic {
+            display-name = "lic";
             bindings = <
-&bt BT_CLR &bt BT_SEL 0       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &tog QWE                                                                 &tog QWE     &none           &none        &none        &none        &none              &none
-&bt BT_CLR &bt BT_SEL 0       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &sys_reset                                                               &sys_reset   &bt BT_CLR      &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0       &bt BT_CLR
-&none      &none              &none        &none        &none        &rgb_ug RGB_TOG &bootloader    &none          &none            &none  &none              &bootloader  &rgb_ug RGB_TOG &none        &none        &none        &none              &none
-&none      &tabdance      &as i        &as o        &as n        &out OUT_TOG                                  &none            &none                                  &out OUT_TOG    &as n        &as o        &as i        &tabdance      &none
-&none      &sk_lshift_lock    &as e        &as a        &as t                        &lt NAV SPC    &lt DESK BSPC  &none            &none  &lt DESK BSPC      &lt NAV SPC                  &as t        &as a        &as e        &sk_lshift_lock    &none
-            >;
-        };
-
-        qwerty {
-            display-name = "qwe";
-            bindings = <
-&kp EQUAL         &kp N1     &kp N2    &kp N3    &kp N4     &kp N5  &trans                                                   &trans     &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB           &kp Q      &kp W     &kp E     &kp R      &kp T   &trans                                                   &trans     &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&mt LCTRL ESCAPE  &kp A      &kp S     &kp D     &kp F      &kp G   &trans    &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &trans     &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z      &kp X     &kp C     &kp V      &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&tog QWE          &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &tog QWE
+&bt BT_CLR &bt BT_SEL 0       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &tog QWE                                                                 &tog QWE     &bt BT_CLR      &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0       &bt BT_CLR
+&none      &sk_lalt_lock      &as l        &as i        &as c        &none           &sys_reset                                                               &sys_reset   &none           &as c        &as i        &as l        &sk_lalt_lock      &none
+&none      &sk_lctrl_lock     &as r        &as o        &as d        &rgb_ug RGB_TOG &bootloader    &none          &none            &none  &none              &bootloader  &rgb_ug RGB_TOG &as d        &as o        &as r        &sk_lctrl_lock     &none
+&none      &sk_lshift_lock    &as n        &as e        &as t        &out OUT_TOG                                  &none            &none                                  &out OUT_TOG    &as t        &as e        &as n        &sk_lshift_lock    &none
+&none      &sk_lgui_lock      &as h        &as a        &as s                        &lt NAV SPC    &lt DESK BSPC  &none            &none  &lt DESK BSPC      &lt NAV SPC                  &as s        &as a        &as h        &sk_lgui_lock      &none
             >;
         };
 
@@ -153,7 +141,7 @@
             >;
         };
     };
-    
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         WIN {

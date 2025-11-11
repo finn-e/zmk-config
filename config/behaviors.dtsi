@@ -101,3 +101,12 @@
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&tog QWE>, <&none>, <&sys_reset>, <&none>, <&bootloader>;
         };
+
+        ctab: ctab {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
+            tapping-term-ms = <HOLD_TAP_TIMEOUT>;
+            #binding-cells = <0>;
+            bindings = <&kp LCTL>, <&tabdance>
+            display-name = "Control-Tabdance";
+        }

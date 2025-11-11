@@ -109,4 +109,4 @@
             #binding-cells = <0>;
             bindings = <&kp LCTL>, <&tabdance>
             display-name = "Control-Tabdance";
-        }
+        };

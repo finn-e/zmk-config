@@ -104,17 +104,17 @@ RTCOMBO(D, &as N9, &kp HOME, &as F9, TRI)
 //| | | |x|
 //| | | | |
 //| | | | |
-LTCOMBO(H, &as N1, &kp LEFT, &as F1, TLM, TRM)
-RTCOMBO(H, &as N1, &kp RIGHT, &as F1, TLM, TRM)
+LTCOMBO(H, &as N1, &kp LEFT, &as F1, BLR)
+RTCOMBO(H, &as N1, &kp RIGHT, &as F1, BRR)
 //| | | | |
 //| | | | |
 //| |x| | |
-TCOMBO(A, &as N2, &kp DOWN, &as F2, TLM, TRM)
+TCOMBO(A, &as N2, &kp DOWN, &as F2, BLM, BRM)
 //| | | | |
 //| | | | |
 //| | |x| |
-LTCOMBO(S, &as N3, &kp RIGHT, &as F3, TLM, TRM)
-RTCOMBO(S, &as N3, &kp LEFT, &as F3, TLM, TRM)
+LTCOMBO(S, &as N3, &kp RIGHT, &as F3, BLI)
+RTCOMBO(S, &as N3, &kp LEFT, &as F3, BRI)
 //| | | | |
 //| | | | |
 //| | | |x|

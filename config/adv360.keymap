@@ -27,10 +27,10 @@
 #define TRR 25
 #define TRM 24
 #define TRI 23
-#define HLP 40
-#define HLR 41
-#define HLM 42
-#define HLI 43
+#define HRP 40
+#define HRR 41
+#define HRM 42
+#define HRI 43
 #define BRP 54
 #define BRR 53
 #define BRM 52

@@ -134,7 +134,7 @@ FCOMBO(LMETA, &sk_lmeta_lock, &as RPAR, &as LPAR, &bt BT_SEL 3, TLI HLI, TRI HRI
 //| | | |x|
 //| | | |x|
 //| | | | |
-FCOMBO(L, &as l, &kp apos, &kp dqt, &kp grave, BLR HLR, HRR BRR)
+FCOMBO(LMETA, &as l, &kp apos, &kp dqt, &kp grave, HLR BLR, HRR BRR)
 //| | | | |
 //| |x| | |
 //| |x| | |

@@ -68,21 +68,21 @@ TCOMBO(##NAME, ##INNER_BINDINGS, ##OUTER_BINDINGS, ##BOTH_BINDINGS, ##LEFT_KEYPO
 
 //** COMBOS **//
 // 3 column diagrams do not include pinky (most combos)
-LTCOMBO(sk_shift, &as N0, &kp LEFT, &as F10, BLP)
-RTCOMBO(sk_shift, &as N0, &kp RIGHT, &as F10, BRP)
+LTCOMBO(sk_shift, &as N0, &kp LEFT, &as F10, HLP)
+RTCOMBO(sk_shift, &as N0, &kp RIGHT, &as F10, HRP)
 //| | | | |
 //|x| | | |
 //| | | | |
-TCOMBO(N, &as N4, &kp DOWN, &as F4, BLR, BRR)
+TCOMBO(N, &as N4, &kp DOWN, &as F4, HLR, HRR)
 //| | | | |
 //| |x| | |
 //| | | | |
-TCOMBO(E, &as N5, &kp UP, &as F5, BLM, BRM)
+TCOMBO(E, &as N5, &kp UP, &as F5, HLM, HRM)
 //| | | | |
 //| | |x| |
 //| | | | |
-LTCOMBO(T, &as N6, &kp RIGHT, &as F6, BLI)
-RTCOMBO(T, &as N6, &kp LEFT, &as F6, BRI)
+LTCOMBO(T, &as N6, &kp RIGHT, &as F6, HLI)
+RTCOMBO(T, &as N6, &kp LEFT, &as F6, HRI)
 //| | | | |
 //| | | |x|
 //| | | | |

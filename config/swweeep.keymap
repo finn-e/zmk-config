@@ -14,28 +14,24 @@
 
 // NOT BOUGIE KEYS
 // LEFT SIDE
-#define LB0 0
-#define LB1 1
-#define LB2 2
-#define LB3 3
 #define LCX 4
 #define LCC 14
 #define LCV 24
 // RIGHT SIDE
-#define RB0 9
-#define RB1 8
-#define RB2 7
-#define RB3 6
 #define RCX 5
 #define RCC 15
 #define RCV 25
 
 // BOUGIE KEYS
 // LEFT SIDE
-#define TLP 10
-#define TLR 11
-#define TLM 12
-#define TLI 13
+#define TLP  0
+#define TLR  1
+#define TLM  2
+#define TLI  3
+#define HLP 10
+#define HLR 11
+#define HLM 12
+#define HLI 13
 #define BLP 20
 #define BLR 21
 #define BLM 22
@@ -44,10 +40,14 @@
 #define LIT 31
 
 // RIGHT SIDE
-#define TRP 19
-#define TRR 18
-#define TRM 17
-#define TRI 16
+#define TRP  9
+#define TRR  8
+#define TRM  7
+#define TRI  6
+#define HRP 19
+#define HRR 18
+#define HRM 17
+#define HRI 16
 #define BRP 29
 #define BRR 28
 #define BRM 27
@@ -139,9 +139,9 @@
   //                   -------------------     -------------------
             display-name = "bougie";
             bindings = < 
-  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR            &bt BT_CLR    &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
-  &tabdance    &as I        &as O        &as N        &bootloader           &bootloader   &as N        &as O        &as I        &tabdance
-  &key_repeat  &as E        &as A        &as T        &sys_reset            &sys_reset    &as T        &as A        &as E        &key_repeat
+  &sk_lmeta_lock  &as R        &as O        &as D        &bt BT_CLR            &bt BT_CLR    &as D        &as O        &as R        &sk_meta_lock
+  &sk_lshift_lock &as N        &as E        &as T        &bootloader           &bootloader   &as T        &as E        &as N        &sk_lshift_lock
+  &sk_lctrl_lock  &as H        &as A        &as S        &sys_reset            &sys_reset    &as S        &as A        &as H        &sk_lctrl_lock
                             &mo NAV      &lt NAV SPC  &lt DESK BSPC         &lt DESK BSPC &lt NAV SPC  &mo NUM
             >;
         };

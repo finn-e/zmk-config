@@ -14,28 +14,24 @@
 
 // NOT BOUGIE KEYS
 // LEFT SIDE
-#define LB0 0
-#define LB1 1
-#define LB2 2
-#define LB3 3
 #define LCX 4
 #define LCC 14
 #define LCV 24
 // RIGHT SIDE
-#define RB0 9
-#define RB1 8
-#define RB2 7
-#define RB3 6
 #define RCX 5
 #define RCC 15
 #define RCV 25
 
 // BOUGIE KEYS
 // LEFT SIDE
-#define TLP 10
-#define TLR 11
-#define TLM 12
-#define TLI 13
+#define TLP 0
+#define TLR 1
+#define TLM 2
+#define TLI 3
+#define HLP 10
+#define HLR 11
+#define HLM 12
+#define HLI 13
 #define BLP 20
 #define BLR 21
 #define BLM 22
@@ -44,10 +40,14 @@
 #define LIT 31
 
 // RIGHT SIDE
-#define TRP 19
-#define TRR 18
-#define TRM 17
-#define TRI 16
+#define TRP  9
+#define TRR  8
+#define TRM  7
+#define TRI  6
+#define HRP 19
+#define HRR 18
+#define HRM 17
+#define HRI 16
 #define BRP 29
 #define BRR 28
 #define BRM 27

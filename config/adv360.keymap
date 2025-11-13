@@ -8,25 +8,33 @@
 
 // BOUGIE KEYS
 // LEFT SIDE
-#define TLP 47
-#define TLR 48
-#define TLM 49
-#define TLI 50
-#define BLP 61
-#define BLR 62
-#define BLM 63
-#define BLI 64
+#define TLP 15
+#define TLR 16
+#define TLM 17
+#define TLI 18
+#define HLP 29
+#define HLR 30
+#define HLM 31
+#define HLI 32
+#define BLP 43
+#define BLR 44
+#define BLM 45
+#define BLI 46
 #define LIT 65
 #define LOT 66
 // RIGHT SIDE
-#define TRP 58
-#define TRR 57
-#define TRM 56
-#define TRI 55
-#define BRP 74
-#define BRR 73
-#define BRM 72
-#define BRI 71
+#define TRP 26
+#define TRR 25
+#define TRM 24
+#define TRI 23
+#define HLP 40
+#define HLR 41
+#define HLM 42
+#define HLI 43
+#define BRP 54
+#define BRR 53
+#define BRM 52
+#define BRI 51
 #define ROT 69
 #define RIT 70
 // LAYERS
@@ -78,10 +86,10 @@
             display-name = "lic";
             bindings = <
 &bt BT_CLR &bt BT_SEL 0       &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR      &sys_reset                                                               &sys_reset   &bt BT_CLR      &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0       &bt BT_CLR
-&none      &sk_lalt_lock      &as l        &as i        &as c        &none           &sys_reset                                                               &sys_reset   &none           &as c        &as i        &as l        &sk_lalt_lock      &none
-&none      &sk_lctrl_lock     &as r        &as o        &as d        &rgb_ug RGB_TOG &bootloader    &none          &none            &none  &none              &bootloader  &rgb_ug RGB_TOG &as d        &as o        &as r        &sk_lctrl_lock     &none
-&none      &sk_lshift_lock    &as n        &as e        &as t        &out OUT_TOG                                  &none            &none                                  &out OUT_TOG    &as t        &as e        &as n        &sk_lshift_lock    &none
-&none      &sk_lmeta_lock     &as h        &as a        &as s                        &lt NAV SPC    &lt DESK BSPC  &none            &none  &lt DESK BSPC      &lt NAV SPC                  &as s        &as a        &as h        &sk_lmeta_lock     &none
+&none      &sk_lmeta_lock     &as r        &as o        &as d        &none           &sys_reset                                                               &sys_reset   &none           &as d        &as o        &as r        &sk_lmeta_lock     &none
+&none      &sk_lshift_lock    &as n        &as e        &as t        &rgb_ug RGB_TOG &bootloader    &none          &none            &none  &none              &bootloader  &rgb_ug RGB_TOG &as t        &as e        &as n        &sk_lshift_lock    &none
+&none      &sk_lctrl_lock     &as h        &as a        &as s        &out OUT_TOG                                  &none            &none                                  &out OUT_TOG    &as h        &as a        &as s        &sk_lctrl_lock     &none
+&none      &none              &none        &none        &none                        &lt NAV SPC    &lt DESK BSPC  &none            &none  &lt DESK BSPC      &lt NAV SPC                  &none        &none        &none        &none              &none
             >;
         };
 
@@ -89,10 +97,10 @@
             display-name = "nav";
             bindings = <
 &none  &none     &none      &none      &none      &none  &none                                     &none   &none  &none     &none      &none      &none      &none
-&none  &none     &none      &none      &none      &none  &none                                     &none   &none  &none     &none      &none      &none      &none
-&none  &none     &none      &none      &none      &none  &none   &none   &none      &none  &none   &none   &none  &none     &none      &none      &none      &none
-&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none                  &none      &none                  &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
-&none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT         &trans  &trans  &none      &none  &trans  &trans         &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none
+&none  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none  &none                                     &none   &none  &none     &none      &none      &none      &none
+&none  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none  &none   &none   &none      &none  &none   &none   &none  &none     &none      &none      &none      &none
+&none  &none     &kp LEFT   &kp DOWN   &kp RIGHT  &none                  &none      &none                  &none  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &none
+&none  &none     &none      &none      &none             &trans  &trans  &none      &none  &trans  &trans         &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &none
             >;
         };
 
